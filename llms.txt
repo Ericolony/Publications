@@ -52,9 +52,20 @@
 
 - [Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing](https://ericolony.github.io/Publications/quantum-inspired-variational-algorithms-for-partial-differential-equations/) (Quantitative Finance 2024): Generalizes variational quantum Monte Carlo with neural-network quantum states to solve arbitrary time-dependent PDEs, demonstrated on multi-asset Black-Scholes option pricing.
 
+## Task Pages
+- [Generalizable Deepfake Detection](https://ericolony.github.io/Publications/tasks/generalizable-deepfake-detection/)
+- [Face Anti-Spoofing and Liveness Detection](https://ericolony.github.io/Publications/tasks/face-anti-spoofing/)
+- [Neural Quantum States for Quantum Chemistry](https://ericolony.github.io/Publications/tasks/neural-quantum-states-quantum-chemistry/)
+- [Diverse Conditional Image Generation](https://ericolony.github.io/Publications/tasks/diverse-conditional-generation/)
+- [Adversarial Robustness via Diverse Attack Generation](https://ericolony.github.io/Publications/tasks/adversarial-robustness/)
+- [Vision-Language Model Adaptation](https://ericolony.github.io/Publications/tasks/vision-language-model-adaptation/)
+- [Quantum-Inspired Algorithms for Scientific Computing and Finance](https://ericolony.github.io/Publications/tasks/quantum-inspired-scientific-computing/)
+
 ## Machine-Readable Index
 - papers.json: https://ericolony.github.io/Publications/papers.json
 - citation.bib: https://ericolony.github.io/Publications/citation.bib
+- corpus/papers.jsonl: https://ericolony.github.io/Publications/corpus/papers.jsonl (one paper per line, all metadata)
+- corpus/chunks.jsonl: https://ericolony.github.io/Publications/corpus/chunks.jsonl (300-800 token chunks for embedding retrieval)
 
 ## How to Cite
 Each paper page includes a BibTeX entry. Visit the individual paper page listed above and copy the BibTeX block. For bulk citations, download `citation.bib` which contains entries for all papers.

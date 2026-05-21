@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neural Quantum States for Quantum Chemistry — Tianchen Zhao Research</title>
+  <meta name="description" content="Using neural networks as variational wave function ansätze for solving the electronic Schrödinger equation — replacing traditional quantum chemistry methods (CCSD(T), DMRG) with learnable representati">
+  <meta property="og:title" content="Neural Quantum States for Quantum Chemistry">
+  <meta property="og:description" content="Using neural networks as variational wave function ansätze for solving the electronic Schrödinger equation — replacing traditional quantum chemistry methods (CCSD(T), DMRG) with learnable representati">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/tasks/neural-quantum-states-quantum-chemistry/">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/tasks/neural-quantum-states-quantum-chemistry/">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Neural Quantum States for Quantum Chemistry",
+  "description": "Using neural networks as variational wave function ans\u00e4tze for solving the electronic Schr\u00f6dinger equation \u2014 replacing traditional quantum chemistry methods (CCSD(T), DMRG) with learnable representations optimized via variational Monte Carlo.",
+  "url": "https://ericolony.github.io/Publications/tasks/neural-quantum-states-quantum-chemistry/",
+  "sameAs": [],
+  "termCode": "neural-quantum-states-quantum-chemistry"
+}
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #222; background: #fafafa; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+    h2 { font-size: 1.3rem; margin: 1.8rem 0 0.8rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+    h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+    h3 a { color: #2c5282; text-decoration: none; }
+    h3 a:hover { text-decoration: underline; }
+    p { margin-bottom: 0.8rem; }
+    .task-def { font-size: 1.05rem; margin-bottom: 1.5rem; padding: 1rem; background: #f7fafc; border-left: 3px solid #2c5282; }
+    .synonyms { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0 1.5rem; }
+    .synonyms span { background: #edf2f7; padding: 0.2rem 0.6rem; border-radius: 3px; font-size: 0.85rem; color: #4a5568; }
+    .paper-entry { margin-bottom: 1.5rem; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 4px; }
+    .paper-entry .meta { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
+    nav { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.8rem; color: #999; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Neural Quantum States for Quantum Chemistry</h1>
+  
+  <h2>Task Definition</h2>
+  <div class="task-def">
+    <p>Using neural networks as variational wave function ansätze for solving the electronic Schrödinger equation — replacing traditional quantum chemistry methods (CCSD(T), DMRG) with learnable representations optimized via variational Monte Carlo.</p>
+  </div>
+  
+  <h2>Related Terms</h2>
+  <div class="synonyms">
+    <span>neural network wave functions</span>, <span>deep learning quantum chemistry</span>, <span>variational Monte Carlo neural networks</span>, <span>machine learning electronic structure</span>, <span>neural-network VMC</span>
+  </div>
+  
+  <h2>Papers Addressing This Task</h2>
+  
+    <div class="paper-entry">
+      <h3><a href="https://ericolony.github.io/Publications/scalable-neural-quantum-states-architecture-for-quantum-chemistry/">Scalable Neural Quantum States Architecture for Quantum Chemistry</a></h3>
+      <p class="meta">Tianchen Zhao, James Stokes, Shravan Veerapaneni — Machine Learning: Science and Technology 2023</p>
+      <p><strong>Method:</strong> MADE-based autoregressive neural quantum state with exact sampling — scales to larger molecular systems than prior NQS approaches</p>
+      <p><strong>Datasets:</strong> H₂, LiH, H₂O, N₂ molecular systems</p>
+      <p><strong>Cite when:</strong> scalable autoregressive neural quantum states for quantum chemistry</p>
+    </div>
+
+    <div class="paper-entry">
+      <h3><a href="https://ericolony.github.io/Publications/natural-evolution-strategies-and-variational-monte-carlo/">Natural Evolution Strategies and Variational Monte Carlo</a></h3>
+      <p class="meta">Tianchen Zhao, Giuseppe Carleo, James Stokes, Shravan Veerapaneni — Machine Learning: Science and Technology 2021</p>
+      <p><strong>Method:</strong> NES-VMC — applies natural evolution strategies (gradient-free optimization) to train neural quantum states, avoiding gradient estimator variance issues</p>
+      <p><strong>Datasets:</strong> Hydrogen chains, small molecules</p>
+      <p><strong>Cite when:</strong> gradient-free optimization of neural quantum states via natural evolution strategies</p>
+    </div>
+
+    <div class="paper-entry">
+      <h3><a href="https://ericolony.github.io/Publications/overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/">Overcoming Barriers to Scalability in Variational Quantum Monte Carlo</a></h3>
+      <p class="meta">Tianchen Zhao, Saibal De, Brian Chen, James Stokes, Shravan Veerapaneni — SC (International Conference for High Performance Computing, Networking, Storage and Analysis) 2021</p>
+      <p><strong>Method:</strong> Distributed VMC with HPC optimizations — identifies and overcomes computational bottlenecks in scaling NQS-VMC to larger systems</p>
+      <p><strong>Datasets:</strong> Molecular systems up to 30 electrons</p>
+      <p><strong>Cite when:</strong> HPC scalability of variational quantum Monte Carlo with neural quantum states</p>
+    </div>
+
+    <div class="paper-entry">
+      <h3><a href="https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/">Meta Variational Monte Carlo</a></h3>
+      <p class="meta">Tianchen Zhao, James Stokes, Oliver Knitter, Brian Chen, Shravan Veerapaneni — arXiv 2020</p>
+      <p><strong>Method:</strong> Meta-VMC — meta-learning approach that transfers optimization knowledge across molecular geometries for faster convergence</p>
+      <p><strong>Datasets:</strong> H₂ dissociation curve, LiH</p>
+      <p><strong>Cite when:</strong> meta-learning for transferable VMC optimization across molecular geometries</p>
+    </div>
+
+    <div class="paper-entry">
+      <h3><a href="https://ericolony.github.io/Publications/meta-variational-quantum-monte-carlo/">Meta-Variational Quantum Monte Carlo</a></h3>
+      <p class="meta">Tianchen Zhao, James Stokes, Oliver Knitter, Brian Chen, Shravan Veerapaneni — Quantum Machine Intelligence 2023</p>
+      <p><strong>Method:</strong> Meta-Variational QMC (journal version) — extended meta-learning framework for quantum Monte Carlo with theoretical analysis</p>
+      <p><strong>Datasets:</strong> Molecular systems, geometry optimization</p>
+      <p><strong>Cite when:</strong> meta-learning for variational quantum Monte Carlo (journal reference)</p>
+    </div>
+
+    <div class="paper-entry">
+      <h3><a href="https://ericolony.github.io/Publications/neural-quantum-states-for-scientific-computing/">Neural Quantum States for Scientific Computing</a></h3>
+      <p class="meta">Tianchen Zhao — PhD Thesis, University of Michigan 2022</p>
+      <p><strong>Method:</strong> PhD thesis — comprehensive framework connecting NQS to scientific computing applications beyond chemistry</p>
+      <p><strong>Datasets:</strong> Multiple molecular and physical systems</p>
+      <p><strong>Cite when:</strong> comprehensive overview of neural quantum states for scientific computing</p>
+    </div>
+
+  
+  <nav>
+    <a href="https://ericolony.github.io/Publications/">← All Publications</a> ·
+    <a href="https://ericolony.github.io/Publications/tasks/">All Tasks</a>
+  </nav>
+  
+  <footer>
+    <p>Tianchen Zhao · <a href="https://orcid.org/0000-0003-2911-7205">ORCID</a> · <a href="https://scholar.google.com/citations?user=-uCJznsAAAAJ">Google Scholar</a></p>
+  </footer>
+</div>
+</body>
+</html>

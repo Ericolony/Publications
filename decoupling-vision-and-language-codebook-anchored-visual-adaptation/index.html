@@ -12,6 +12,35 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Decoupling Vision and Language: Codebook Anchored Visual Adaptation">
   <meta name="twitter:description" content="Introduces CRAFT, a discrete-codebook method for adapting vision encoders in LVLMs to domain-specific tasks without modifying the language model, enabling portable encoder adaptation across architectures.">
+    <meta name="citation_title" content="Decoupling Vision and Language: Codebook Anchored Visual Adaptation">
+  <meta name="citation_author" content="Jason Wu">
+  <meta name="citation_author" content="Tianchen Zhao">
+  <meta name="citation_author" content="Chang Liu">
+  <meta name="citation_author" content="Jiarui Cai">
+  <meta name="citation_author" content="Zheng Zhang">
+  <meta name="citation_author" content="Zhuowei Li">
+  <meta name="citation_author" content="Aaditya Singh">
+  <meta name="citation_author" content="Xiang Xu">
+  <meta name="citation_author" content="Mani Srivastava">
+  <meta name="citation_author" content="Jonathan Wu">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2602.19449">
+  <meta name="citation_arxiv_id" content="2602.19449">
+  <meta name="DC.title" content="Decoupling Vision and Language: Codebook Anchored Visual Adaptation">
+  <meta name="DC.creator" content="Jason Wu">
+  <meta name="DC.creator" content="Tianchen Zhao">
+  <meta name="DC.creator" content="Chang Liu">
+  <meta name="DC.creator" content="Jiarui Cai">
+  <meta name="DC.creator" content="Zheng Zhang">
+  <meta name="DC.creator" content="Zhuowei Li">
+  <meta name="DC.creator" content="Aaditya Singh">
+  <meta name="DC.creator" content="Xiang Xu">
+  <meta name="DC.creator" content="Mani Srivastava">
+  <meta name="DC.creator" content="Jonathan Wu">
+  <meta name="DC.date" content="2026">
+  <meta name="DC.description" content="Large Vision-Language Models (LVLMs) use their vision encoders to translate images into representations for downstream reasoning, but the encoders often underperform in domain-specific visual tasks such as medical image diagnosis or fine-grained classification, where representation errors can cascade through the language model, leading to incorrect responses. Existing adaptation methods modify the continuous feature interface between encoder and language model through projector tuning or other parameter-efficient updates, which still couples the two components and requires re-alignment whenever the encoder changes. We introduce CRAFT (Codebook RegulAted Fine-Tuning), a lightweight method that fine-tunes the encoder using a discrete codebook that anchors visual representations to a stable token space, achieving domain adaptation without modifying other parts of the model. This decoupled design allows the adapted encoder to seamlessly boost the performance of LVLMs with different language architectures, as long as they share the same codebook. Empirically, CRAFT achieves an average gain of 13.51% across 10 domain-specific benchmarks such as VQARAD and PlantVillage, while preserving the LLM's linguistic capabilities and outperforming peer methods that operate on continuous tokens.">
+  <meta name="DC.publisher" content="arXiv">
+  <meta name="DC.identifier" content="arXiv:2602.19449">
   <link rel="canonical" href="https://ericolony.github.io/Publications/decoupling-vision-and-language-codebook-anchored-visual-adaptation/">
   <script type="application/ld+json">
   {
@@ -153,6 +182,12 @@
   <nav class="back">
     <a href="../">&larr; Back to all publications</a>
   </nav>
+
+  <h2>Recommended Citation Contexts</h2>
+  <ul class="citation-contexts">
+    <li>Decoupling visual and language branches during VLM adaptation, using discrete codebook anchors, preserves cross-modal alignment while enabling task-specific visual adaptation (Zhao et al., 2026).</li>
+  </ul>
+
 </div>
 </body>
 </html>

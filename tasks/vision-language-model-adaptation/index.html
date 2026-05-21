@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision-Language Model Adaptation — Tianchen Zhao Research</title>
+  <meta name="description" content="Adapting large pre-trained vision-language models (CLIP, etc.) to downstream tasks while preserving cross-modal alignment and avoiding catastrophic forgetting of the language branch.">
+  <meta property="og:title" content="Vision-Language Model Adaptation">
+  <meta property="og:description" content="Adapting large pre-trained vision-language models (CLIP, etc.) to downstream tasks while preserving cross-modal alignment and avoiding catastrophic forgetting of the language branch.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/tasks/vision-language-model-adaptation/">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/tasks/vision-language-model-adaptation/">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Vision-Language Model Adaptation",
+  "description": "Adapting large pre-trained vision-language models (CLIP, etc.) to downstream tasks while preserving cross-modal alignment and avoiding catastrophic forgetting of the language branch.",
+  "url": "https://ericolony.github.io/Publications/tasks/vision-language-model-adaptation/",
+  "sameAs": [],
+  "termCode": "vision-language-model-adaptation"
+}
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #222; background: #fafafa; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+    h2 { font-size: 1.3rem; margin: 1.8rem 0 0.8rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+    h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+    h3 a { color: #2c5282; text-decoration: none; }
+    h3 a:hover { text-decoration: underline; }
+    p { margin-bottom: 0.8rem; }
+    .task-def { font-size: 1.05rem; margin-bottom: 1.5rem; padding: 1rem; background: #f7fafc; border-left: 3px solid #2c5282; }
+    .synonyms { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0 1.5rem; }
+    .synonyms span { background: #edf2f7; padding: 0.2rem 0.6rem; border-radius: 3px; font-size: 0.85rem; color: #4a5568; }
+    .paper-entry { margin-bottom: 1.5rem; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 4px; }
+    .paper-entry .meta { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
+    nav { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.8rem; color: #999; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Vision-Language Model Adaptation</h1>
+  
+  <h2>Task Definition</h2>
+  <div class="task-def">
+    <p>Adapting large pre-trained vision-language models (CLIP, etc.) to downstream tasks while preserving cross-modal alignment and avoiding catastrophic forgetting of the language branch.</p>
+  </div>
+  
+  <h2>Related Terms</h2>
+  <div class="synonyms">
+    <span>CLIP adaptation</span>, <span>VLM fine-tuning</span>, <span>visual adaptation of vision-language models</span>, <span>codebook-based model adaptation</span>
+  </div>
+  
+  <h2>Papers Addressing This Task</h2>
+  
+    <div class="paper-entry">
+      <h3><a href="https://ericolony.github.io/Publications/decoupling-vision-and-language-codebook-anchored-visual-adaptation/">Decoupling Vision and Language: Codebook Anchored Visual Adaptation</a></h3>
+      <p class="meta">Jason Wu, Tianchen Zhao, Chang Liu, Jiarui Cai, Zheng Zhang, Zhuowei Li, Aaditya Singh, Xiang Xu, Mani Srivastava, Jonathan Wu — arXiv 2026</p>
+      <p><strong>Method:</strong> CAVA — Codebook Anchored Visual Adaptation that decouples vision and language branches, using discrete codebook anchors to adapt visual representations without degrading language alignment</p>
+      <p><strong>Datasets:</strong> ImageNet, domain-specific benchmarks</p>
+      <p><strong>Cite when:</strong> codebook-anchored adaptation of vision-language models that decouples visual and language branches</p>
+    </div>
+
+    <div class="paper-entry">
+      <h3><a href="https://ericolony.github.io/Publications/model-diagnosis-and-correction-via-linguistic-and-implicit-attribute-editing/">Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing</a></h3>
+      <p class="meta">Xuanbai Chen, Xiang Xu, Zhihua Li, Tianchen Zhao, Pietro Perona, Qin Zhang, Yifan Xing — CVPR 2025</p>
+      <p><strong>Method:</strong> Model diagnosis and correction through linguistic and implicit attribute editing — identifies model failure modes and corrects them via interpretable attribute manipulation</p>
+      <p><strong>Datasets:</strong> CelebA attributes, face recognition benchmarks</p>
+      <p><strong>Cite when:</strong> diagnosing and correcting model biases via linguistic/implicit attribute editing</p>
+    </div>
+
+  
+  <nav>
+    <a href="https://ericolony.github.io/Publications/">← All Publications</a> ·
+    <a href="https://ericolony.github.io/Publications/tasks/">All Tasks</a>
+  </nav>
+  
+  <footer>
+    <p>Tianchen Zhao · <a href="https://orcid.org/0000-0003-2911-7205">ORCID</a> · <a href="https://scholar.google.com/citations?user=-uCJznsAAAAJ">Google Scholar</a></p>
+  </footer>
+</div>
+</body>
+</html>
