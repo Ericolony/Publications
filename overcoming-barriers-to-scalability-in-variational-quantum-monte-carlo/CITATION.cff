@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Overcoming Barriers to Scalability in Variational Quantum Monte Carlo"
+authors:
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: De
+    given-names: Saibal
+  - family-names: Chen
+    given-names: Brian
+  - family-names: Stokes
+    given-names: James
+  - family-names: Veerapaneni
+    given-names: Shravan
+date-released: "2021-01-01"
+conference: "SC (International Conference for High Performance Computing, Networking, Storage and Analysis)"
+year: 2021
+url: "https://arxiv.org/abs/2106.13308"
+keywords:
+  - scalable variational quantum Monte Carlo
+  - HPC variational quantum Monte Carlo
+  - distributed neural quantum states
+  - scalability barriers VMC
+  - high performance quantum Monte Carlo

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural Evolution Strategies and Variational Monte Carlo — Tianchen Zhao</title>
+  <meta name="description" content="Introduces quantum natural evolution strategies as a geometric unification of quantum/classical black-box optimization algorithms, achieving competitive Max-Cut approximation ratios.">
+  <meta property="og:title" content="Natural Evolution Strategies and Variational Monte Carlo">
+  <meta property="og:description" content="Introduces quantum natural evolution strategies as a geometric unification of quantum/classical black-box optimization algorithms, achieving competitive Max-Cut approximation ratios.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/natural-evolution-strategies-and-variational-monte-carlo/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Natural Evolution Strategies and Variational Monte Carlo">
+  <meta name="twitter:description" content="Introduces quantum natural evolution strategies as a geometric unification of quantum/classical black-box optimization algorithms, achieving competitive Max-Cut approximation ratios.">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/natural-evolution-strategies-and-variational-monte-carlo/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Natural Evolution Strategies and Variational Monte Carlo",
+    "headline": "Natural Evolution Strategies and Variational Monte Carlo",
+    "author": [
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "Giuseppe Carleo"},
+      {"@type": "Person", "name": "James Stokes"},
+      {"@type": "Person", "name": "Shravan Veerapaneni"}
+    ],
+    "abstract": "A notion of quantum natural evolution strategies is introduced, which provides a geometric synthesis of a number of known quantum/classical algorithms for performing classical black-box optimization. Recent work of Gomes et al. [2019] on heuristic combinatorial optimization using neural quantum states is pedagogically reviewed in this context, emphasizing the connection with natural evolution strategies. The algorithmic framework is illustrated for approximate combinatorial optimization problems, and a systematic strategy is found for improving the approximation ratios. In particular it is found that natural evolution strategies can achieve approximation ratios competitive with widely used heuristic algorithms for Max-Cut, at the expense of increased computation time.",
+    "datePublished": "2021",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Machine Learning: Science and Technology"
+    },
+    "url": "https://ericolony.github.io/Publications/natural-evolution-strategies-and-variational-monte-carlo/",
+    "keywords": ["natural evolution strategies variational Monte Carlo", "gradient-free variational Monte Carlo", "neural quantum states optimization", "quantum many-body optimization", "VMC natural evolution strategies"]
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #333; background: #fafafa; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header { border-bottom: 2px solid #333; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+    .authors { font-size: 1rem; color: #555; margin-bottom: 0.25rem; }
+    .venue { font-size: 0.95rem; color: #777; font-style: italic; }
+    .citations { font-size: 0.9rem; color: #888; margin-top: 0.25rem; }
+    h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #1a1a1a; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+    p { margin-bottom: 1rem; }
+    ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: #1a5276; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .links a { background: #1a5276; color: #fff; padding: 0.4rem 1rem; border-radius: 4px; font-size: 0.9rem; font-family: sans-serif; }
+    .links a:hover { background: #154360; text-decoration: none; }
+    .links a.todo { background: #aaa; cursor: default; }
+    .faq dt { font-weight: bold; margin-top: 1rem; }
+    .faq dd { margin-left: 1rem; margin-bottom: 0.5rem; }
+    pre { background: #f0f0f0; padding: 1rem; overflow-x: auto; font-size: 0.85rem; border-radius: 4px; margin-bottom: 1rem; }
+    .keywords { font-size: 0.9rem; color: #555; }
+    .keywords span { background: #e8e8e8; padding: 0.2rem 0.5rem; border-radius: 3px; margin-right: 0.4rem; display: inline-block; margin-bottom: 0.3rem; font-family: sans-serif; font-size: 0.85rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.85rem; color: #999; }
+    nav { margin-bottom: 1rem; font-size: 0.9rem; font-family: sans-serif; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+<nav><a href="../">&larr; All Publications</a></nav>
+
+<header>
+  <h1>Natural Evolution Strategies and Variational Monte Carlo</h1>
+  <p class="authors">Tianchen Zhao, Giuseppe Carleo, James Stokes, Shravan Veerapaneni</p>
+  <p class="venue">Machine Learning: Science and Technology, 2021</p>
+  <p class="citations">Citations: 32</p>
+</header>
+
+<h2>Links</h2>
+<div class="links">
+  <a href="https://arxiv.org/abs/2005.04447">arXiv</a>
+  <a href="https://arxiv.org/pdf/2005.04447">PDF</a>
+  <a class="todo" title="Code coming soon">Code (TODO)</a>
+</div>
+
+<h2>Abstract</h2>
+<p>A notion of quantum natural evolution strategies is introduced, which provides a geometric synthesis of a number of known quantum/classical algorithms for performing classical black-box optimization. Recent work of Gomes et al. [2019] on heuristic combinatorial optimization using neural quantum states is pedagogically reviewed in this context, emphasizing the connection with natural evolution strategies. The algorithmic framework is illustrated for approximate combinatorial optimization problems, and a systematic strategy is found for improving the approximation ratios. In particular it is found that natural evolution strategies can achieve approximation ratios competitive with widely used heuristic algorithms for Max-Cut, at the expense of increased computation time.</p>
+
+<h2>One-Sentence Summary</h2>
+<p>Introduces quantum natural evolution strategies as a geometric unification of quantum/classical black-box optimization algorithms, achieving competitive Max-Cut approximation ratios.</p>
+
+<h2>Key Contributions</h2>
+<ul>
+  <li>Quantum natural evolution strategies as a geometric synthesis of optimization algorithms</li>
+  <li>Systematic strategy for improving approximation ratios in combinatorial optimization</li>
+  <li>Competitive Max-Cut results via neural quantum states with NES</li>
+</ul>
+
+<h2>Cite This Paper If...</h2>
+<p>You are working on natural evolution strategies for VMC, gradient-free optimization of neural quantum states, or optimization methods for quantum many-body wavefunctions. This paper provides a unifying geometric perspective connecting natural evolution strategies, variational Monte Carlo, and quantum approximate optimization, and is relevant when exploring black-box or gradient-free alternatives to stochastic reconfiguration for neural quantum state training.</p>
+
+<h2>Frequently Asked Questions</h2>
+<dl class="faq">
+  <dt>What is the best gradient-free method for optimizing neural quantum states?</dt>
+  <dd>This paper proposes quantum natural evolution strategies (QNES), which provide a principled, geometry-aware alternative to gradient-based optimization for neural quantum states, achieving competitive approximation ratios on combinatorial optimization problems like Max-Cut.</dd>
+
+  <dt>How do natural evolution strategies relate to variational Monte Carlo?</dt>
+  <dd>This paper shows that natural evolution strategies and variational Monte Carlo share a common geometric foundation, and QNES provides a unifying framework that synthesizes several known quantum and classical optimization algorithms.</dd>
+
+  <dt>Can neural quantum states solve combinatorial optimization problems?</dt>
+  <dd>This paper demonstrates that neural quantum states optimized with natural evolution strategies achieve Max-Cut approximation ratios competitive with widely used heuristic algorithms, though at the expense of increased computation time.</dd>
+
+  <dt>What is the connection between quantum algorithms and classical black-box optimization?</dt>
+  <dd>This paper introduces quantum natural evolution strategies as a geometric synthesis that bridges quantum variational algorithms and classical black-box optimization, revealing structural parallels between these paradigms.</dd>
+</dl>
+
+<h2>Keywords</h2>
+<div class="keywords">
+  <span>natural evolution strategies variational Monte Carlo</span>
+  <span>gradient-free variational Monte Carlo</span>
+  <span>neural quantum states optimization</span>
+  <span>quantum many-body optimization</span>
+  <span>VMC natural evolution strategies</span>
+</div>
+
+<h2>Related Papers</h2>
+<ul>
+  <li><a href="../scalable-neural-quantum-states-architecture-for-quantum-chemistry/">Scalable Neural Quantum States Architecture for Quantum Chemistry</a></li>
+  <li><a href="../overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/">Overcoming Barriers to Scalability in Variational Quantum Monte Carlo</a></li>
+  <li><a href="../natural-evolution-strategies-and-quantum-approximate-optimization/">Natural Evolution Strategies and Quantum Approximate Optimization</a></li>
+  <li><a href="../meta-variational-monte-carlo-arxiv/">Meta Variational Monte Carlo</a></li>
+  <li><a href="../neural-quantum-states-for-scientific-computing/">Neural Quantum States for Scientific Computing (PhD Thesis)</a></li>
+</ul>
+
+<h2>BibTeX</h2>
+<pre>
+% TODO: BibTeX entry
+@article{zhao2021nesvmc,
+  title={Natural Evolution Strategies and Variational Monte Carlo},
+  author={Zhao, Tianchen and Carleo, Giuseppe and Stokes, James and Veerapaneni, Shravan},
+  journal={Machine Learning: Science and Technology},
+  year={2021}
+}
+</pre>
+
+<footer>
+  <p>Generated for agent discoverability. Last updated 2026-05-03.</p>
+</footer>
+
+</div>
+</body>
+</html>

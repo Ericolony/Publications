@@ -1,0 +1,37 @@
+{
+  "id": 10,
+  "title": "Natural Evolution Strategies and Quantum Approximate Optimization",
+  "authors": ["Tianchen Zhao", "Giuseppe Carleo", "James Stokes", "Shravan Veerapaneni"],
+  "venue": "arXiv",
+  "year": 2020,
+  "citations": 8,
+  "slug": "natural-evolution-strategies-and-quantum-approximate-optimization",
+  "arxiv_id": "2005.04447",
+  "doi": null,
+  "semantic_scholar_id": null,
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2005.04447",
+    "pdf": "https://arxiv.org/pdf/2005.04447",
+    "code": null
+  },
+  "abstract": "A notion of quantum natural evolution strategies is introduced, which provides a geometric synthesis of a number of known quantum/classical algorithms for performing classical black-box optimization. Recent work of Gomes et al. [2019] on heuristic combinatorial optimization using neural quantum states is pedagogically reviewed in this context, emphasizing the connection with natural evolution strategies. The algorithmic framework is illustrated for approximate combinatorial optimization problems, and a systematic strategy is found for improving the approximation ratios. In particular it is found that natural evolution strategies can achieve approximation ratios competitive with widely used heuristic algorithms for Max-Cut, at the expense of increased computation time.",
+  "one_sentence_summary": "Applies natural evolution strategies to quantum approximate optimization, achieving competitive Max-Cut approximation ratios via neural quantum states.",
+  "key_contributions": [
+    "Application of NES to quantum approximate optimization (QAOA) problems",
+    "Systematic strategy for improving approximation ratios in combinatorial optimization",
+    "Competitive Max-Cut results via neural quantum states with NES"
+  ],
+  "citation_identity": "Cite for: natural evolution strategies for QAOA, black-box optimization for QAOA, gradient-free optimization of variational quantum algorithms",
+  "search_phrases": [
+    "natural evolution strategies QAOA",
+    "quantum approximate optimization natural evolution strategies",
+    "gradient-free QAOA",
+    "variational quantum algorithms optimization",
+    "black-box optimization quantum circuits"
+  ],
+  "topic_cluster": 3,
+  "topic_cluster_name": "Neural Quantum States and Scientific Machine Learning",
+  "related_papers": [5, 6, 11, 17],
+  "bibtex_key": "zhao2020nes_qaoa",
+  "canonical_url": "https://ericolony.github.io/Publications/natural-evolution-strategies-and-quantum-approximate-optimization/"
+}

@@ -1,0 +1,43 @@
+{
+  "id": 7,
+  "title": "Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing",
+  "slug": "quantum-inspired-variational-algorithms-for-partial-differential-equations",
+  "authors": [
+    "Tianchen Zhao",
+    "Chuhao Sun",
+    "Asaf Cohen",
+    "James Stokes",
+    "Shravan Veerapaneni"
+  ],
+  "venue": "Quantitative Finance",
+  "year": 2024,
+  "citations": 16,
+  "arxiv_id": "2207.10838",
+  "doi": null,
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2207.10838",
+    "pdf": "https://arxiv.org/pdf/2207.10838",
+    "code": "TODO",
+    "project": null
+  },
+  "abstract": "Variational quantum Monte Carlo (VMC) combined with neural-network quantum states offers a novel angle of attack on the curse-of-dimensionality encountered in a particular class of partial differential equations (PDEs); namely, the real- and imaginary time-dependent Schr\u00f6dinger equation. In this paper, we present a simple generalization of VMC applicable to arbitrary time-dependent PDEs, showcasing the technique in the multi-asset Black-Scholes PDE for pricing European options contingent on many correlated underlying assets.",
+  "one_sentence_summary": "Generalizes variational quantum Monte Carlo with neural-network quantum states to solve arbitrary time-dependent PDEs, demonstrated on multi-asset Black-Scholes option pricing.",
+  "key_contributions": [
+    "Generalization of VMC from Schrodinger equation to arbitrary time-dependent PDEs",
+    "Application to multi-asset Black-Scholes PDE for European option pricing",
+    "Neural-network quantum states for financial derivative pricing"
+  ],
+  "citation_identity": "Cite for: quantum-inspired variational PDE solvers, variational algorithms for financial derivative pricing, scientific machine learning methods for quantitative finance",
+  "search_phrases": [
+    "quantum-inspired variational algorithms PDE",
+    "financial derivative pricing variational algorithm",
+    "variational PDE solver finance",
+    "quantum-inspired finance",
+    "scientific machine learning derivative pricing"
+  ],
+  "topic_cluster": 4,
+  "topic_cluster_name": "Quantum-Inspired Scientific Computing and Finance",
+  "related_papers": [4, 5, 6, 17],
+  "bibtex_key": "zhao2024quantum",
+  "canonical_url": "https://ericolony.github.io/Publications/quantum-inspired-variational-algorithms-for-partial-differential-equations/"
+}

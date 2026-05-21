@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: conference-paper
+title: "Diversity-Sensitive Conditional Generative Adversarial Networks"
+authors:
+  - given-names: Dingdong
+    family-names: Yang
+  - given-names: Seunghoon
+    family-names: Hong
+  - given-names: Yunseok
+    family-names: Jang
+  - given-names: Tianchen
+    family-names: Zhao
+  - given-names: Honglak
+    family-names: Lee
+date-released: "2019-05-06"
+url: "https://ericolony.github.io/Publications/diversity-sensitive-conditional-generative-adversarial-networks/"
+abstract: "We propose a simple yet highly effective method that addresses the mode-collapse problem in the Conditional Generative Adversarial Network (cGAN). Although conditional distributions are multi-modal in practice, most cGAN approaches tend to learn an overly simplified distribution where an input is always mapped to a single output regardless of variations in latent code. To address such issue, we propose to explicitly regularize the generator to produce diverse outputs depending on latent codes. The proposed regularization is simple, general, and can be easily integrated into most conditional GAN objectives."
+keywords:
+  - conditional GAN
+  - mode collapse
+  - diversity regularization
+  - image-to-image translation
+  - generative adversarial networks

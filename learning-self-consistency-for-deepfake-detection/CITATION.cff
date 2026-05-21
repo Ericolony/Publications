@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: conference-paper
+title: "Learning Self-Consistency for Deepfake Detection"
+authors:
+  - given-names: Tianchen
+    family-names: Zhao
+  - given-names: Xiang
+    family-names: Xu
+  - given-names: Mingze
+    family-names: Xu
+  - given-names: Hui
+    family-names: Ding
+  - given-names: Yuanjun
+    family-names: Xiong
+  - given-names: Wei
+    family-names: Xia
+date-released: "2021-10-01"
+url: "https://ericolony.github.io/Publications/learning-self-consistency-for-deepfake-detection/"
+abstract: "We propose a new method to detect deepfake images using the cue of the source feature inconsistency within the forged images. It is based on the hypothesis that images' distinct source features can be preserved and extracted after going through state-of-the-art deepfake generation processes. We introduce a novel representation learning approach, called pair-wise self-consistency learning (PCL), for training ConvNets to extract these source features and detect deepfake images. It is accompanied by a new image synthesis approach, called inconsistency image generator (I2G), to provide richly annotated training data for PCL. Experimental results on seven popular datasets show that our models improve averaged AUC over the state of the art from 96.45% to 98.05% in the in-dataset evaluation and from 86.03% to 92.18% in the cross-dataset evaluation."
+keywords:
+  - deepfake detection
+  - self-consistency
+  - source feature inconsistency
+  - cross-dataset generalization
+  - face forgery detection

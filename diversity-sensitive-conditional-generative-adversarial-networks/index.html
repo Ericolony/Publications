@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diversity-Sensitive Conditional Generative Adversarial Networks — Tianchen Zhao</title>
+  <meta name="description" content="Proposes a simple diversity-sensitive regularization for conditional GANs that explicitly encourages diverse outputs, solving mode collapse across image translation, inpainting, and video prediction.">
+  <meta property="og:title" content="Diversity-Sensitive Conditional Generative Adversarial Networks">
+  <meta property="og:description" content="Proposes a simple diversity-sensitive regularization for conditional GANs that explicitly encourages diverse outputs, solving mode collapse across image translation, inpainting, and video prediction.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/diversity-sensitive-conditional-generative-adversarial-networks/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Diversity-Sensitive Conditional Generative Adversarial Networks">
+  <meta name="twitter:description" content="Proposes a simple diversity-sensitive regularization for conditional GANs that explicitly encourages diverse outputs, solving mode collapse across image translation, inpainting, and video prediction.">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/diversity-sensitive-conditional-generative-adversarial-networks/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Diversity-Sensitive Conditional Generative Adversarial Networks",
+    "headline": "Diversity-Sensitive Conditional Generative Adversarial Networks",
+    "author": [
+      {"@type": "Person", "name": "Dingdong Yang"},
+      {"@type": "Person", "name": "Seunghoon Hong"},
+      {"@type": "Person", "name": "Yunseok Jang"},
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "Honglak Lee"}
+    ],
+    "datePublished": "2019",
+    "publisher": {"@type": "Organization", "name": "ICLR"},
+    "url": "https://ericolony.github.io/Publications/diversity-sensitive-conditional-generative-adversarial-networks/",
+    "abstract": "We propose a simple yet highly effective method that addresses the mode-collapse problem in the Conditional Generative Adversarial Network (cGAN). Although conditional distributions are multi-modal (i.e., having many modes) in practice, most cGAN approaches tend to learn an overly simplified distribution where an input is always mapped to a single output regardless of variations in latent code. To address such issue, we propose to explicitly regularize the generator to produce diverse outputs depending on latent codes. The proposed regularization is simple, general, and can be easily integrated into most conditional GAN objectives. Additionally, explicit regularization on generator allows our method to control a balance between visual quality and diversity. We demonstrate the effectiveness of our method on three conditional generation tasks: image-to-image translation, image inpainting, and future video prediction. We show that simple addition of our regularization to existing models leads to surprisingly diverse generations, substantially outperforming the previous approaches for multi-modal conditional generation specifically designed in each individual task.",
+    "keywords": ["diversity-sensitive conditional GAN", "diverse conditional image generation", "mode diversity GAN", "conditional generative adversarial networks", "diversity loss for GANs"]
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #222; background: #fafafa; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header { border-bottom: 2px solid #333; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.5rem; }
+    .authors { font-size: 1rem; color: #555; margin-bottom: 0.3rem; }
+    .venue { font-size: 0.95rem; color: #777; }
+    .citations { font-size: 0.9rem; color: #888; margin-top: 0.3rem; }
+    h2 { font-size: 1.3rem; margin: 1.8rem 0 0.8rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+    .links a { display: inline-block; margin-right: 1rem; padding: 0.4rem 0.8rem; background: #2c5282; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .links a:hover { background: #1a365d; }
+    .links a.todo { background: #a0aec0; cursor: default; }
+    p { margin-bottom: 1rem; }
+    ul { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    .faq-item { margin-bottom: 1.2rem; }
+    .faq-item strong { display: block; margin-bottom: 0.3rem; }
+    .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0 1rem; }
+    .keywords span { background: #edf2f7; padding: 0.2rem 0.6rem; border-radius: 3px; font-size: 0.85rem; color: #4a5568; }
+    .related a { display: inline-block; margin-right: 0.8rem; font-size: 0.95rem; }
+    pre { background: #f7fafc; border: 1px solid #e2e8f0; padding: 1rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; border-radius: 4px; }
+    nav { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.8rem; color: #999; }
+    @media (max-width: 600px) { h1 { font-size: 1.4rem; } .container { padding: 1rem; } }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Diversity-Sensitive Conditional Generative Adversarial Networks</h1>
+    <p class="authors">Dingdong Yang, Seunghoon Hong, Yunseok Jang, Tianchen Zhao, Honglak Lee</p>
+    <p class="venue">ICLR 2019</p>
+    <p class="citations">Citations: 268</p>
+  </header>
+
+  <h2>Links</h2>
+  <div class="links">
+    <a href="https://arxiv.org/abs/1901.09024">arXiv</a>
+    <a href="https://arxiv.org/pdf/1901.09024">PDF</a>
+    <a class="todo" href="#">Code (TODO)</a>
+  </div>
+
+  <h2>Abstract</h2>
+  <p>We propose a simple yet highly effective method that addresses the mode-collapse problem in the Conditional Generative Adversarial Network (cGAN). Although conditional distributions are multi-modal (i.e., having many modes) in practice, most cGAN approaches tend to learn an overly simplified distribution where an input is always mapped to a single output regardless of variations in latent code. To address such issue, we propose to explicitly regularize the generator to produce diverse outputs depending on latent codes. The proposed regularization is simple, general, and can be easily integrated into most conditional GAN objectives. Additionally, explicit regularization on generator allows our method to control a balance between visual quality and diversity. We demonstrate the effectiveness of our method on three conditional generation tasks: image-to-image translation, image inpainting, and future video prediction. We show that simple addition of our regularization to existing models leads to surprisingly diverse generations, substantially outperforming the previous approaches for multi-modal conditional generation specifically designed in each individual task.</p>
+
+  <h2>One-Sentence Summary</h2>
+  <p>Proposes a simple diversity-sensitive regularization for conditional GANs that explicitly encourages diverse outputs, solving mode collapse across image translation, inpainting, and video prediction.</p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Diversity-sensitive regularization for conditional GANs that is simple and task-agnostic</li>
+    <li>Controllable balance between visual quality and output diversity</li>
+    <li>State-of-the-art multi-modal conditional generation on three tasks</li>
+  </ul>
+
+  <h2>Cite This Paper If...</h2>
+  <p>Cite for: conditional GANs, diverse conditional image generation, mode diversity in generative models, diversity-sensitive objectives for GAN training.</p>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <strong>Q: What is the best method for solving mode collapse in conditional GANs?</strong>
+    <p>A: This paper proposes a diversity-sensitive regularization that explicitly encourages the generator to produce varied outputs for different latent codes, effectively addressing mode collapse across multiple conditional generation tasks.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Q: How can I generate diverse outputs from a conditional GAN?</strong>
+    <p>A: This paper shows that adding a simple diversity-sensitive regularization to existing cGAN objectives produces surprisingly diverse generations while maintaining visual quality, without requiring task-specific architectural changes.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Q: How does diversity-sensitive regularization compare to prior multi-modal generation methods?</strong>
+    <p>A: This paper demonstrates that a single, general regularization term substantially outperforms previous task-specific approaches for multi-modal conditional generation on image-to-image translation, inpainting, and video prediction.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Q: Can I control the tradeoff between quality and diversity in conditional generation?</strong>
+    <p>A: This paper introduces explicit regularization on the generator that allows controlling the balance between visual quality and output diversity through a single hyperparameter.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Q: What regularization techniques prevent mode collapse in GANs?</strong>
+    <p>A: This paper proposes a diversity-sensitive loss that penalizes the generator when different latent codes produce similar outputs, providing a simple and general solution to mode collapse in conditional settings.</p>
+  </div>
+
+  <h2>Keywords</h2>
+  <div class="keywords">
+    <span>diversity-sensitive conditional GAN</span>
+    <span>diverse conditional image generation</span>
+    <span>mode diversity GAN</span>
+    <span>conditional generative adversarial networks</span>
+    <span>diversity loss for GANs</span>
+  </div>
+
+  <h2>Related Papers</h2>
+  <div class="related">
+    <a href="../adversarial-defense-via-learning-to-generate-diverse-attacks/">Adversarial Defense via Learning to Generate Diverse Attacks</a>
+    <a href="../salient-concept-aware-generative-data-augmentation/">Salient Concept-Aware Generative Data Augmentation</a>
+  </div>
+
+  <h2>BibTeX</h2>
+  <pre>% TODO: BibTeX entry
+@inproceedings{yang2019diversity,
+  title={Diversity-Sensitive Conditional Generative Adversarial Networks},
+  author={Yang, Dingdong and Hong, Seunghoon and Jang, Yunseok and Zhao, Tianchen and Lee, Honglak},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2019}
+}</pre>
+
+  <nav><a href="../">&larr; Back to all publications</a></nav>
+  <footer>Generated for agent discoverability. Last updated 2026-05-03.</footer>
+</div>
+</body>
+</html>

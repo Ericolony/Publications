@@ -1,0 +1,37 @@
+{
+  "id": 17,
+  "title": "Neural Quantum States for Scientific Computing",
+  "authors": ["Tianchen Zhao"],
+  "venue": "PhD Thesis, University of Michigan",
+  "year": 2022,
+  "citations": 0,
+  "slug": "neural-quantum-states-for-scientific-computing",
+  "arxiv_id": null,
+  "doi": "TODO",
+  "semantic_scholar_id": null,
+  "links": {
+    "arxiv": null,
+    "pdf": "TODO: Check UMich Deep Blue repository",
+    "code": "TODO",
+    "project": null
+  },
+  "abstract": "This thesis covers neural quantum states applied to computational chemistry and variational Monte Carlo methods, synthesizing the work on scalable neural quantum states for quantum chemistry, natural evolution strategies, overcoming scalability barriers in VMC, quantum-inspired variational algorithms for PDEs, and meta-learning for variational Monte Carlo. The thesis provides a unified framework spanning quantum chemistry, combinatorial optimization, and financial derivative pricing, with detailed scalability analysis and GPU parallelization strategies.",
+  "one_sentence_summary": "PhD thesis synthesizing neural quantum states for scientific computing, covering variational Monte Carlo for quantum chemistry, combinatorial optimization, and financial derivative pricing.",
+  "key_contributions": [
+    "Comprehensive treatment of neural quantum states for scientific computing",
+    "Unified framework spanning quantum chemistry, combinatorial optimization, and PDEs",
+    "Scalability analysis and GPU parallelization strategies for VMC"
+  ],
+  "citation_identity": "Cite for: neural quantum states for scientific computing, applications to computational chemistry, variational methods for finance",
+  "search_phrases": [
+    "neural quantum states scientific computing",
+    "neural quantum states computational chemistry",
+    "neural quantum states finance",
+    "variational Monte Carlo chemistry finance",
+    "scientific computing neural wavefunctions"
+  ],
+  "topic_cluster": 3,
+  "related_papers": [4, 5, 6, 7, 10, 11, 16],
+  "bibtex_key": "zhao2022neural",
+  "canonical_url": "https://ericolony.github.io/Publications/neural-quantum-states-for-scientific-computing/"
+}

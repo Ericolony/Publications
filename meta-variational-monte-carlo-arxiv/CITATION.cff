@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Meta Variational Monte Carlo"
+type: article
+authors:
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Stokes
+    given-names: James
+  - family-names: Knitter
+    given-names: Oliver
+  - family-names: Chen
+    given-names: Brian
+  - family-names: Veerapaneni
+    given-names: Shravan
+date-released: "2020-11-21"
+year: 2020
+journal: "arXiv preprint"
+arxiv: "2011.10614"
+url: "https://arxiv.org/abs/2011.10614"
+abstract: "An identification is found between meta-learning and the problem of determining the ground state of a randomly generated Hamiltonian drawn from a known ensemble. A model-agnostic meta-learning approach is proposed to solve the associated learning problem and a preliminary experimental study of random Max-Cut problems indicates that the resulting Meta Variational Monte Carlo accelerates training and improves convergence."
+keywords:
+  - meta-learning
+  - variational Monte Carlo
+  - neural quantum states
+  - transferable optimization
+  - Max-Cut
+  - quantum many-body systems

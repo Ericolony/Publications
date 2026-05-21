@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Salient Concept-Aware Generative Data Augmentation"
+type: article
+authors:
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Chen
+    given-names: Xuanbai
+  - family-names: Li
+    given-names: Zhihua
+  - family-names: Fang
+    given-names: Jun
+  - family-names: An
+    given-names: Dongsheng
+  - family-names: Xu
+    given-names: Xiang
+  - family-names: Tu
+    given-names: Zhuowen
+  - family-names: Xing
+    given-names: Yifan
+date-released: "2025-10-20"
+year: 2025
+journal: "arXiv preprint"
+arxiv: "2510.15194"
+url: "https://arxiv.org/abs/2510.15194"
+abstract: "We propose a personalized image generation framework that uses a salient concept-aware image embedding model to reduce the influence of irrelevant visual details during the synthesis process, improving fine-grained recognition under both conventional and long-tail settings."
+keywords:
+  - generative data augmentation
+  - salient concept
+  - fine-grained recognition
+  - long-tail learning
+  - synthetic data
+  - personalized generation
+  - concept-aware embedding

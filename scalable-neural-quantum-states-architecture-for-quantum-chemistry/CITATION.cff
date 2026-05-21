@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Scalable Neural Quantum States Architecture for Quantum Chemistry"
+authors:
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Stokes
+    given-names: James
+  - family-names: Veerapaneni
+    given-names: Shravan
+date-released: "2023-01-01"
+journal: "Machine Learning: Science and Technology"
+year: 2023
+url: "https://arxiv.org/abs/2208.05637"
+keywords:
+  - scalable neural quantum states
+  - neural quantum states quantum chemistry
+  - variational Monte Carlo quantum chemistry
+  - autoregressive neural quantum states
+  - GPU-scaled quantum chemistry
+  - ab initio neural quantum states

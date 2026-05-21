@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuthGuard: Generalizable Deepfake Detection via Language Guidance — Tianchen Zhao</title>
+  <meta name="description" content="Integrates language guidance and commonsense reasoning into deepfake detection via vision-language contrastive learning, achieving state-of-the-art generalization across unseen forgery methods.">
+  <meta name="keywords" content="AuthGuard, deepfake detection, language guidance, vision-language, face forgery detection, generalization, MLLM, contrastive learning">
+  <meta name="author" content="Tianchen Zhao">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/authguard-generalizable-deepfake-detection-via-language-guidance/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AuthGuard: Generalizable Deepfake Detection via Language Guidance">
+  <meta property="og:description" content="Integrates language guidance and commonsense reasoning into deepfake detection via vision-language contrastive learning, achieving state-of-the-art generalization across unseen forgery methods.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/authguard-generalizable-deepfake-detection-via-language-guidance/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AuthGuard: Generalizable Deepfake Detection via Language Guidance">
+  <meta name="twitter:description" content="Integrates language guidance and commonsense reasoning into deepfake detection via vision-language contrastive learning, achieving state-of-the-art generalization across unseen forgery methods.">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "AuthGuard: Generalizable Deepfake Detection via Language Guidance",
+    "headline": "AuthGuard: Generalizable Deepfake Detection via Language Guidance",
+    "author": [
+      {"@type": "Person", "name": "Guangyu Shen"},
+      {"@type": "Person", "name": "Zhihua Li"},
+      {"@type": "Person", "name": "Xiang Xu"},
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "Zheng Zhang"},
+      {"@type": "Person", "name": "Dongsheng An"},
+      {"@type": "Person", "name": "Zhuowen Tu"},
+      {"@type": "Person", "name": "Yifan Xing"},
+      {"@type": "Person", "name": "Qin Zhang"}
+    ],
+    "datePublished": "2025",
+    "publisher": {"@type": "Organization", "name": "WACV"},
+    "url": "https://ericolony.github.io/Publications/authguard-generalizable-deepfake-detection-via-language-guidance/",
+    "sameAs": "https://arxiv.org/abs/2506.04501",
+    "description": "Integrates language guidance and commonsense reasoning into deepfake detection via vision-language contrastive learning, achieving state-of-the-art generalization across unseen forgery methods."
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.5rem; }
+    .authors { color: #555; font-size: 1.05rem; margin-bottom: 0.3rem; }
+    .venue { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .venue .citations { background: #e8f0fe; color: #1a56db; padding: 2px 8px; border-radius: 3px; font-size: 0.85rem; }
+    .links { margin-bottom: 2rem; }
+    .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: #f0f0f0;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .links a:hover { background: #ddd; }
+    h2 { font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; margin-top: 2rem; }
+    .abstract { text-align: justify; }
+    .summary { font-style: italic; color: #444; margin: 1rem 0; }
+    .contributions ul { padding-left: 1.2rem; }
+    .contributions li { margin-bottom: 0.4rem; }
+    .faq dt { font-weight: bold; margin-top: 1rem; }
+    .faq dd { margin-left: 0; margin-bottom: 0.5rem; }
+    .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .keywords span {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 0.85rem;
+    }
+    .related-list { list-style: none; padding: 0; }
+    .related-list li { margin-bottom: 0.4rem; }
+    .related-list a { color: #1a56db; }
+    pre.bibtex {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .nav { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.9rem; }
+    .nav a { color: #1a56db; }
+    .cite-if { background: #fffde7; border-left: 3px solid #fbc02d; padding: 0.8rem 1rem; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>AuthGuard: Generalizable Deepfake Detection via Language Guidance</h1>
+  <div class="authors">Guangyu Shen, Zhihua Li, Xiang Xu, Tianchen Zhao, Zheng Zhang, Dongsheng An, Zhuowen Tu, Yifan Xing, Qin Zhang</div>
+  <div class="venue">WACV, 2025 <span class="citations">2 citations</span></div>
+
+  <div class="links">
+    <a href="https://arxiv.org/abs/2506.04501">arXiv</a>
+    <a href="https://arxiv.org/pdf/2506.04501">PDF</a>
+    <a href="#">Code (coming soon)</a>
+  </div>
+
+  <h2>Abstract</h2>
+  <p class="abstract">Existing deepfake detection techniques struggle to keep-up with the ever-evolving novel, unseen forgeries methods. This limitation stems from their reliance on statistical artifacts learned during training, which are often tied to specific generation processes that may not be representative of samples from new, unseen deepfake generation methods encountered at test time. We propose that incorporating language guidance can improve deepfake detection generalization by integrating human-like commonsense reasoning -- such as recognizing logical inconsistencies and perceptual anomalies -- alongside statistical cues. To achieve this, we train an expert deepfake vision encoder by combining discriminative classification with image-text contrastive learning, where the text is generated by generalist MLLMs using few-shot prompting. This allows the encoder to extract both language-describable, commonsense deepfake artifacts and statistical forgery artifacts from pixel-level distributions. To further enhance robustness, we integrate data uncertainty learning into vision-language contrastive learning, mitigating noise in image-text supervision. Our expert vision encoder seamlessly interfaces with an LLM, further enabling more generalized and interpretable deepfake detection while also boosting accuracy. The resulting framework, AuthGuard, achieves state-of-the-art deepfake detection accuracy in both in-distribution and out-of-distribution settings, achieving AUC gains of 6.15% on the DFDC dataset and 16.68% on the DF40 dataset. Additionally, AuthGuard significantly enhances deepfake reasoning, improving performance by 24.69% on the DDVQA dataset.</p>
+
+  <h2>Summary</h2>
+  <p class="summary">Integrates language guidance and commonsense reasoning into deepfake detection via vision-language contrastive learning, achieving state-of-the-art generalization across unseen forgery methods.</p>
+
+  <h2>Key Contributions</h2>
+  <div class="contributions">
+    <ul>
+      <li>Expert deepfake vision encoder combining discriminative and contrastive learning with MLLM-generated text</li>
+      <li>Data uncertainty learning for robust vision-language contrastive training</li>
+      <li>State-of-the-art OOD deepfake detection with interpretable reasoning</li>
+      <li>AUC gains of 6.15% on DFDC and 16.68% on DF40</li>
+    </ul>
+  </div>
+
+  <div class="cite-if">
+    <strong>Cite this paper if</strong> your work involves language-guided deepfake detection, generalizable face forgery detection, or vision-language guidance for biometric security.
+  </div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>What makes AuthGuard different from prior deepfake detectors?</dt>
+    <dd>AuthGuard incorporates language guidance from multimodal LLMs to learn commonsense reasoning cues (logical inconsistencies, perceptual anomalies) alongside statistical artifacts, enabling generalization to unseen forgery methods that purely statistical detectors miss.</dd>
+
+    <dt>How does the language guidance work in practice?</dt>
+    <dd>Generalist MLLMs generate text descriptions of deepfake artifacts via few-shot prompting. These descriptions are used in image-text contrastive learning to train a vision encoder that captures both describable and statistical forgery cues.</dd>
+
+    <dt>What is data uncertainty learning and why is it needed?</dt>
+    <dd>MLLM-generated text descriptions can be noisy. Data uncertainty learning models the confidence of each image-text pair, down-weighting unreliable supervision signals to make contrastive training more robust.</dd>
+
+    <dt>Does AuthGuard support interpretable detection?</dt>
+    <dd>Yes. The expert vision encoder interfaces with an LLM for interpretable deepfake reasoning, improving performance by 24.69% on the DDVQA reasoning benchmark.</dd>
+
+    <dt>How well does AuthGuard generalize to unseen attacks?</dt>
+    <dd>AuthGuard achieves state-of-the-art out-of-distribution performance, with AUC gains of 6.15% on DFDC and 16.68% on DF40, demonstrating strong generalization to novel forgery methods.</dd>
+  </dl>
+
+  <h2>Keywords</h2>
+  <div class="keywords">
+    <span>AuthGuard deepfake detection</span>
+    <span>language-guided deepfake detection</span>
+    <span>generalizable deepfake detection language guidance</span>
+    <span>vision-language face forgery detection</span>
+    <span>robust face forgery detection</span>
+  </div>
+
+  <h2>Related Papers</h2>
+  <ul class="related-list">
+    <li><a href="../learning-self-consistency-for-deepfake-detection/">Learning Self-Consistency for Deepfake Detection</a> (ICCV 2021)</li>
+    <li><a href="../principles-of-designing-robust-remote-face-anti-spoofing-systems/">Principles of Designing Robust Remote Face Anti-Spoofing Systems</a> (arXiv 2024)</li>
+    <li><a href="../optimal-transport-guided-source-free-adaptation-for-face-anti-spoofing/">Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing</a> (CVPR 2025)</li>
+  </ul>
+
+  <h2>BibTeX</h2>
+  <pre class="bibtex">@inproceedings{shen2025authguard,
+  title={AuthGuard: Generalizable Deepfake Detection via Language Guidance},
+  author={Shen, Guangyu and Li, Zhihua and Xu, Xiang and Zhao, Tianchen and Zhang, Zheng and An, Dongsheng and Tu, Zhuowen and Xing, Yifan and Zhang, Qin},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2025}
+}</pre>
+
+  <div class="nav">
+    <a href="../">&larr; All Publications</a>
+  </div>
+
+</div>
+</body>
+</html>

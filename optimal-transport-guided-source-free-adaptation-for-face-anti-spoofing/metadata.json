@@ -1,0 +1,50 @@
+{
+  "id": 9,
+  "title": "Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing",
+  "slug": "optimal-transport-guided-source-free-adaptation-for-face-anti-spoofing",
+  "authors": [
+    "Zhuowei Li",
+    "Tianchen Zhao",
+    "Xiang Xu",
+    "Zheng Zhang",
+    "Zhihua Li",
+    "Xuanbai Chen",
+    "Qin Zhang",
+    "Alessandro Bergamo",
+    "Anil K. Jain",
+    "Yifan Xing"
+  ],
+  "venue": "CVPR",
+  "year": 2025,
+  "citations": 8,
+  "arxiv_id": "2503.22984",
+  "doi": "10.1109/CVPR52734.2025.02268",
+  "semantic_scholar_id": "fc59e07d517cf90d2b4c78dc9c30a4c5bfe66c3f",
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2503.22984",
+    "pdf": "https://arxiv.org/pdf/2503.22984",
+    "code": "TODO",
+    "project": null
+  },
+  "abstract": "Developing a face anti-spoofing model that meets the security requirements of clients worldwide is challenging due to the domain gap between training datasets and diverse end-user test data. Moreover, for security and privacy reasons, it is undesirable for clients to share a large amount of their face data with service providers. In this work, we introduce a novel method in which the face anti-spoofing model can be adapted by the client itself to a target domain at test time using only a small sample of data while keeping model parameters and training data inaccessible to the client. Specifically, we develop a prototype-based base model and an optimal transport-guided adaptor that enables adaptation in either a lightweight training or training-free fashion, without updating base model's parameters. Furthermore, we propose geodesic mixup, an optimal transport-based synthesis method that generates augmented training data along the geodesic path between source prototypes and target data distribution. This allows training a lightweight classifier to effectively adapt to target-specific characteristics while retaining essential knowledge learned from the source domain. In cross-domain and cross-attack settings, compared with recent methods, our method achieves average relative improvements of 19.17% in HTER and 8.58% in AUC, respectively.",
+  "one_sentence_summary": "Enables privacy-preserving test-time adaptation of face anti-spoofing models via optimal transport-guided prototype matching and geodesic mixup augmentation.",
+  "key_contributions": [
+    "Prototype-based model with optimal transport-guided test-time adaptation",
+    "Geodesic mixup for synthesizing augmented training data along OT paths",
+    "Privacy-preserving adaptation without sharing model parameters or training data",
+    "19.17% HTER improvement and 8.58% AUC improvement over state-of-the-art"
+  ],
+  "citation_identity": "Cite for: source-free domain adaptation for face anti-spoofing, optimal transport for biometric security, domain adaptation without source data in presentation attack detection",
+  "search_phrases": [
+    "source-free adaptation face anti-spoofing",
+    "optimal transport face anti-spoofing",
+    "source-free domain adaptation biometrics",
+    "presentation attack detection domain adaptation",
+    "face anti-spoofing without source data"
+  ],
+  "topic_cluster": 1,
+  "topic_cluster_name": "Deepfake Detection and Face Security",
+  "related_papers": [1, 8, 12],
+  "bibtex_key": "li2025optimal",
+  "canonical_url": "https://ericolony.github.io/Publications/optimal-transport-guided-source-free-adaptation-for-face-anti-spoofing/"
+}

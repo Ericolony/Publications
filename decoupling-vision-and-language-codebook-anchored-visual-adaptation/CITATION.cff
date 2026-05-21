@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Decoupling Vision and Language: Codebook Anchored Visual Adaptation"
+authors:
+  - family-names: Wu
+    given-names: Jason
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Liu
+    given-names: Chang
+  - family-names: Cai
+    given-names: Jiarui
+  - family-names: Zhang
+    given-names: Zheng
+  - family-names: Li
+    given-names: Zhuowei
+  - family-names: Singh
+    given-names: Aaditya
+  - family-names: Xu
+    given-names: Xiang
+  - family-names: Srivastava
+    given-names: Mani
+  - family-names: Wu
+    given-names: Jonathan
+date-released: "2026-02-01"
+type: article
+url: "https://arxiv.org/abs/2602.19449"
+year: 2026
+keywords:
+  - vision-language models
+  - codebook adaptation
+  - domain-specific visual tasks
+  - discrete representations
+  - encoder fine-tuning

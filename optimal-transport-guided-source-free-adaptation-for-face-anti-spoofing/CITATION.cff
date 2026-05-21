@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing"
+type: conference-paper
+authors:
+  - family-names: Li
+    given-names: Zhuowei
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Xu
+    given-names: Xiang
+  - family-names: Zhang
+    given-names: Zheng
+  - family-names: Li
+    given-names: Zhihua
+  - family-names: Chen
+    given-names: Xuanbai
+  - family-names: Zhang
+    given-names: Qin
+  - family-names: Bergamo
+    given-names: Alessandro
+  - family-names: Jain
+    given-names: "Anil K."
+  - family-names: Xing
+    given-names: Yifan
+collection-title: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+year: 2025
+doi: "10.1109/CVPR52734.2025.02268"
+identifiers:
+  - type: other
+    value: "arXiv:2503.22984"
+    description: arXiv preprint
+url: "https://arxiv.org/abs/2503.22984"
+keywords:
+  - source-free domain adaptation
+  - face anti-spoofing
+  - optimal transport
+  - presentation attack detection
+  - geodesic mixup
+  - privacy-preserving adaptation
+  - test-time adaptation
+  - biometric security

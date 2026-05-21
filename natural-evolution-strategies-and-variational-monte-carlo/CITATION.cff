@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Natural Evolution Strategies and Variational Monte Carlo"
+authors:
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Carleo
+    given-names: Giuseppe
+  - family-names: Stokes
+    given-names: James
+  - family-names: Veerapaneni
+    given-names: Shravan
+date-released: "2021-01-01"
+journal: "Machine Learning: Science and Technology"
+year: 2021
+url: "https://arxiv.org/abs/2005.04447"
+keywords:
+  - natural evolution strategies variational Monte Carlo
+  - gradient-free variational Monte Carlo
+  - neural quantum states optimization
+  - quantum many-body optimization
+  - VMC natural evolution strategies

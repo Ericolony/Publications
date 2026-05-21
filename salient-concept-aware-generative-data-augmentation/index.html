@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salient Concept-Aware Generative Data Augmentation — Tianchen Zhao</title>
+  <meta name="description" content="Proposes a salient concept-aware generative augmentation framework that disentangles class-discriminative features from irrelevant context, improving fine-grained recognition under both conventional and long-tail settings.">
+  <meta name="keywords" content="generative data augmentation, salient concept, concept-aware augmentation, fine-grained recognition, long-tail, synthetic data, personalized generation">
+  <meta name="author" content="Tianchen Zhao">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/salient-concept-aware-generative-data-augmentation/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Salient Concept-Aware Generative Data Augmentation">
+  <meta property="og:description" content="Proposes a salient concept-aware generative augmentation framework that disentangles class-discriminative features from irrelevant context, improving fine-grained recognition under both conventional and long-tail settings.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/salient-concept-aware-generative-data-augmentation/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Salient Concept-Aware Generative Data Augmentation">
+  <meta name="twitter:description" content="Proposes a salient concept-aware generative augmentation framework that disentangles class-discriminative features from irrelevant context, improving fine-grained recognition under both conventional and long-tail settings.">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Salient Concept-Aware Generative Data Augmentation",
+    "headline": "Salient Concept-Aware Generative Data Augmentation",
+    "author": [
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "Xuanbai Chen"},
+      {"@type": "Person", "name": "Zhihua Li"},
+      {"@type": "Person", "name": "Jun Fang"},
+      {"@type": "Person", "name": "Dongsheng An"},
+      {"@type": "Person", "name": "Xiang Xu"},
+      {"@type": "Person", "name": "Zhuowen Tu"},
+      {"@type": "Person", "name": "Yifan Xing"}
+    ],
+    "datePublished": "2025",
+    "publisher": {"@type": "Organization", "name": "arXiv"},
+    "url": "https://ericolony.github.io/Publications/salient-concept-aware-generative-data-augmentation/",
+    "sameAs": "https://arxiv.org/abs/2510.15194",
+    "description": "Proposes a salient concept-aware generative augmentation framework that disentangles class-discriminative features from irrelevant context, improving fine-grained recognition under both conventional and long-tail settings."
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.5rem; }
+    .authors { color: #555; font-size: 1.05rem; margin-bottom: 0.3rem; }
+    .venue { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .venue .citations { background: #e8f0fe; color: #1a56db; padding: 2px 8px; border-radius: 3px; font-size: 0.85rem; }
+    .links { margin-bottom: 2rem; }
+    .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: #f0f0f0;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .links a:hover { background: #ddd; }
+    h2 { font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; margin-top: 2rem; }
+    .abstract { text-align: justify; }
+    .summary { font-style: italic; color: #444; margin: 1rem 0; }
+    .contributions ul { padding-left: 1.2rem; }
+    .contributions li { margin-bottom: 0.4rem; }
+    .faq dt { font-weight: bold; margin-top: 1rem; }
+    .faq dd { margin-left: 0; margin-bottom: 0.5rem; }
+    .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .keywords span {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 0.85rem;
+    }
+    .related-list { list-style: none; padding: 0; }
+    .related-list li { margin-bottom: 0.4rem; }
+    .related-list a { color: #1a56db; }
+    pre.bibtex {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .nav { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.9rem; }
+    .nav a { color: #1a56db; }
+    .cite-if { background: #fffde7; border-left: 3px solid #fbc02d; padding: 0.8rem 1rem; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Salient Concept-Aware Generative Data Augmentation</h1>
+  <div class="authors">Tianchen Zhao, Xuanbai Chen, Zhihua Li, Jun Fang, Dongsheng An, Xiang Xu, Zhuowen Tu, Yifan Xing</div>
+  <div class="venue">arXiv, 2025 <span class="citations">1 citation</span></div>
+
+  <div class="links">
+    <a href="https://arxiv.org/abs/2510.15194">arXiv</a>
+    <a href="https://arxiv.org/pdf/2510.15194">PDF</a>
+    <a href="#">Code (coming soon)</a>
+  </div>
+
+  <h2>Abstract</h2>
+  <p class="abstract">Recent generative data augmentation methods conditioned on both image and text prompts struggle to balance between fidelity and diversity, as it is challenging to preserve essential image details while aligning with varied text prompts. This challenge arises because representations in the synthesis process often become entangled with non-essential input image attributes such as environmental contexts, creating conflicts with text prompts intended to modify these elements. To address this, we propose a personalized image generation framework that uses a salient concept-aware image embedding model to reduce the influence of irrelevant visual details during the synthesis process, thereby maintaining intuitive alignment between image and text inputs. By generating images that better preserve class-discriminative features with additional controlled variations, our framework effectively enhances the diversity of training datasets and thereby improves the robustness of downstream models. Our approach demonstrates superior performance across eight fine-grained vision datasets, outperforming state-of-the-art augmentation methods with averaged classification accuracy improvements by 0.73% and 6.5% under conventional and long-tail settings, respectively.</p>
+
+  <h2>Summary</h2>
+  <p class="summary">Proposes a salient concept-aware generative augmentation framework that disentangles class-discriminative features from irrelevant context, improving fine-grained recognition under both conventional and long-tail settings.</p>
+
+  <h2>Key Contributions</h2>
+  <div class="contributions">
+    <ul>
+      <li>Salient concept-aware image embedding that reduces irrelevant visual detail influence</li>
+      <li>Personalized generation preserving class-discriminative features with controlled variation</li>
+      <li>Superior performance on 8 fine-grained datasets, especially under long-tail settings (+6.5%)</li>
+    </ul>
+  </div>
+
+  <div class="cite-if">
+    <strong>Cite this paper if</strong> your work involves generative data augmentation, concept-aware augmentation, salient concept modeling, or synthetic data generation for visual recognition.
+  </div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>What problem does salient concept-aware augmentation solve?</dt>
+    <dd>Standard generative augmentation methods entangle class-discriminative features with irrelevant context (e.g., background), so text prompts that modify the background can corrupt the object identity. Salient concept-aware embedding isolates the class-relevant features, allowing diverse generation without identity loss.</dd>
+
+    <dt>How does this differ from standard image-conditioned generation?</dt>
+    <dd>Rather than using the full image embedding (which includes background, lighting, and other irrelevant attributes), this method uses a salient concept-aware embedding that focuses on class-discriminative features, reducing conflicts between image and text conditioning.</dd>
+
+    <dt>Why is this particularly effective for long-tail recognition?</dt>
+    <dd>Long-tail classes have very few training samples, so augmentation quality matters more. By preserving class identity while varying context, the method generates more useful synthetic samples for rare classes, yielding a 6.5% accuracy improvement under long-tail settings.</dd>
+
+    <dt>What datasets were used for evaluation?</dt>
+    <dd>The method was evaluated on eight fine-grained vision datasets under both conventional and long-tail settings, outperforming state-of-the-art augmentation methods in both regimes.</dd>
+
+    <dt>Can this framework be used with different generative models?</dt>
+    <dd>Yes. The salient concept-aware embedding is a general approach that can interface with various text-to-image diffusion models for personalized generation.</dd>
+  </dl>
+
+  <h2>Keywords</h2>
+  <div class="keywords">
+    <span>salient concept-aware generative data augmentation</span>
+    <span>concept-aware data augmentation</span>
+    <span>generative data augmentation computer vision</span>
+    <span>salient concept augmentation</span>
+    <span>synthetic data generation visual recognition</span>
+  </div>
+
+  <h2>Related Papers</h2>
+  <ul class="related-list">
+    <li><a href="../diversity-sensitive-conditional-generative-adversarial-networks/">Diversity-Sensitive Conditional Generative Adversarial Networks</a> (ICLR 2019)</li>
+    <li><a href="../adversarial-defense-via-learning-to-generate-diverse-attacks/">Adversarial Defense via Learning to Generate Diverse Attacks</a> (ICCV 2019)</li>
+    <li><a href="../model-diagnosis-and-correction-via-linguistic-and-implicit-attribute-editing/">Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing</a> (CVPR 2025)</li>
+    <li><a href="../decoupling-vision-and-language-codebook-anchored-visual-adaptation/">Decoupling Vision and Language: Codebook Anchored Visual Adaptation</a> (arXiv 2026)</li>
+  </ul>
+
+  <h2>BibTeX</h2>
+  <pre class="bibtex">@article{zhao2025salient,
+  title={Salient Concept-Aware Generative Data Augmentation},
+  author={Zhao, Tianchen and Chen, Xuanbai and Li, Zhihua and Fang, Jun and An, Dongsheng and Xu, Xiang and Tu, Zhuowen and Xing, Yifan},
+  journal={arXiv preprint arXiv:2510.15194},
+  year={2025}
+}</pre>
+
+  <div class="nav">
+    <a href="../">&larr; All Publications</a>
+  </div>
+
+</div>
+</body>
+</html>

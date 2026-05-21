@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing — Tianchen Zhao</title>
+  <meta name="description" content="Enables privacy-preserving test-time adaptation of face anti-spoofing models via optimal transport-guided prototype matching and geodesic mixup augmentation.">
+  <meta name="keywords" content="source-free adaptation face anti-spoofing, optimal transport face anti-spoofing, source-free domain adaptation biometrics, presentation attack detection domain adaptation, face anti-spoofing without source data">
+  <meta name="author" content="Tianchen Zhao">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/optimal-transport-guided-source-free-adaptation-for-face-anti-spoofing/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing">
+  <meta property="og:description" content="Enables privacy-preserving test-time adaptation of face anti-spoofing models via optimal transport-guided prototype matching and geodesic mixup augmentation.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/optimal-transport-guided-source-free-adaptation-for-face-anti-spoofing/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing">
+  <meta name="twitter:description" content="Enables privacy-preserving test-time adaptation of face anti-spoofing models via optimal transport-guided prototype matching and geodesic mixup augmentation.">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing",
+    "author": [
+      {"@type": "Person", "name": "Zhuowei Li"},
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "Xiang Xu"},
+      {"@type": "Person", "name": "Zheng Zhang"},
+      {"@type": "Person", "name": "Zhihua Li"},
+      {"@type": "Person", "name": "Xuanbai Chen"},
+      {"@type": "Person", "name": "Qin Zhang"},
+      {"@type": "Person", "name": "Alessandro Bergamo"},
+      {"@type": "Person", "name": "Anil K. Jain"},
+      {"@type": "Person", "name": "Yifan Xing"}
+    ],
+    "datePublished": "2025",
+    "isPartOf": {
+      "@type": "Periodical",
+      "name": "CVPR"
+    },
+    "url": "https://ericolony.github.io/Publications/optimal-transport-guided-source-free-adaptation-for-face-anti-spoofing/",
+    "sameAs": "https://arxiv.org/abs/2503.22984"
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fafafa;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    header {
+      border-bottom: 2px solid #333;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+    .authors {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 0.4rem;
+    }
+    .venue {
+      font-size: 0.95rem;
+      color: #666;
+      font-style: italic;
+    }
+    .citations {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.3rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3rem;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 0.9rem;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-family: sans-serif;
+    }
+    .links a:hover { background: #555; }
+    .links a.todo {
+      background: #ccc;
+      color: #666;
+      cursor: default;
+    }
+    .abstract {
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.4rem; }
+    .faq-item { margin-bottom: 1.2rem; }
+    .faq-item strong { display: block; margin-bottom: 0.3rem; }
+    .keywords {
+      font-size: 0.9rem;
+      color: #555;
+      font-family: sans-serif;
+    }
+    .keywords span {
+      display: inline-block;
+      background: #eee;
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+      margin: 0.15rem 0.3rem 0.15rem 0;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      line-height: 1.5;
+    }
+    .related a {
+      text-decoration: none;
+      color: #1a5276;
+      border-bottom: 1px dashed #1a5276;
+    }
+    .related a:hover { color: #333; }
+    nav.back {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      font-family: sans-serif;
+      font-size: 0.9rem;
+    }
+    nav.back a { color: #1a5276; text-decoration: none; }
+    nav.back a:hover { text-decoration: underline; }
+    .cite-if { font-style: italic; color: #444; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing</h1>
+  <div class="authors">Zhuowei Li, Tianchen Zhao, Xiang Xu, Zheng Zhang, Zhihua Li, Xuanbai Chen, Qin Zhang, Alessandro Bergamo, Anil K. Jain, Yifan Xing</div>
+  <div class="venue">CVPR, 2025</div>
+  <div class="citations">Citations: 8</div>
+</header>
+
+<h2>Links</h2>
+<div class="links">
+  <a href="https://arxiv.org/abs/2503.22984">arXiv</a>
+  <a href="https://arxiv.org/pdf/2503.22984">PDF</a>
+  <a class="todo" title="Code repository coming soon">Code (TODO)</a>
+</div>
+
+<h2>Abstract</h2>
+<p class="abstract">Developing a face anti-spoofing model that meets the security requirements of clients worldwide is challenging due to the domain gap between training datasets and diverse end-user test data. Moreover, for security and privacy reasons, it is undesirable for clients to share a large amount of their face data with service providers. In this work, we introduce a novel method in which the face anti-spoofing model can be adapted by the client itself to a target domain at test time using only a small sample of data while keeping model parameters and training data inaccessible to the client. Specifically, we develop a prototype-based base model and an optimal transport-guided adaptor that enables adaptation in either a lightweight training or training-free fashion, without updating base model's parameters. Furthermore, we propose geodesic mixup, an optimal transport-based synthesis method that generates augmented training data along the geodesic path between source prototypes and target data distribution. This allows training a lightweight classifier to effectively adapt to target-specific characteristics while retaining essential knowledge learned from the source domain. In cross-domain and cross-attack settings, compared with recent methods, our method achieves average relative improvements of 19.17% in HTER and 8.58% in AUC, respectively.</p>
+
+<h2>Summary</h2>
+<p>Enables privacy-preserving test-time adaptation of face anti-spoofing models via optimal transport-guided prototype matching and geodesic mixup augmentation.</p>
+
+<h2>Key Contributions</h2>
+<ul>
+  <li>Prototype-based model with optimal transport-guided test-time adaptation</li>
+  <li>Geodesic mixup for synthesizing augmented training data along optimal transport paths</li>
+  <li>Privacy-preserving adaptation without sharing model parameters or training data</li>
+  <li>19.17% HTER improvement and 8.58% AUC improvement over state-of-the-art</li>
+</ul>
+
+<h2>Cite This Paper If...</h2>
+<p class="cite-if">Cite for: source-free domain adaptation for face anti-spoofing, optimal transport for biometric security, domain adaptation without source data in presentation attack detection.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+  <strong>Q: What does "source-free" mean in this context?</strong>
+  <p>Source-free means the adaptation process does not require access to the original training data or model parameters. The client adapts the model using only a small sample of their own target-domain data, preserving privacy for both the service provider and the client.</p>
+</div>
+
+<div class="faq-item">
+  <strong>Q: How does optimal transport guide the adaptation?</strong>
+  <p>Optimal transport computes the most efficient mapping between source prototype distributions and target data distributions. This mapping guides both the adaptor module and the geodesic mixup augmentation, ensuring adaptation follows geometrically meaningful paths in feature space.</p>
+</div>
+
+<div class="faq-item">
+  <strong>Q: What is geodesic mixup?</strong>
+  <p>Geodesic mixup generates synthetic training samples along the geodesic (shortest) path between source prototypes and target data points in the feature manifold. This produces more meaningful interpolations than linear mixup, better preserving the structure of the data distribution.</p>
+</div>
+
+<div class="faq-item">
+  <strong>Q: Does this method require retraining?</strong>
+  <p>The method supports both a lightweight training mode (training only a small classifier head) and a fully training-free mode. In neither case are the base model parameters updated, making deployment lightweight and practical.</p>
+</div>
+
+<div class="faq-item">
+  <strong>Q: How much target data is needed for adaptation?</strong>
+  <p>The method is designed to work with only a small sample of target-domain data, making it practical for deployment scenarios where clients have limited labeled data available.</p>
+</div>
+
+<h2>Keywords</h2>
+<div class="keywords">
+  <span>source-free adaptation face anti-spoofing</span>
+  <span>optimal transport face anti-spoofing</span>
+  <span>source-free domain adaptation biometrics</span>
+  <span>presentation attack detection domain adaptation</span>
+  <span>face anti-spoofing without source data</span>
+  <span>biometric security</span>
+</div>
+
+<h2>Related Papers</h2>
+<div class="related">
+  <ul>
+    <li><a href="../learning-self-consistency-for-deepfake-detection/">Learning Self-Consistency for Deepfake Detection (ICCV 2021)</a></li>
+    <li><a href="../principles-of-designing-robust-remote-face-anti-spoofing-systems/">Principles of Designing Robust Remote Face Anti-Spoofing Systems (2024)</a></li>
+    <li><a href="../authguard-generalizable-deepfake-detection-via-language-guidance/">AuthGuard: Generalizable Deepfake Detection via Language Guidance (WACV 2025)</a></li>
+  </ul>
+</div>
+
+<h2>BibTeX</h2>
+<pre>
+@inproceedings{li2025optimal,
+  title={Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing},
+  author={Li, Zhuowei and Zhao, Tianchen and Xu, Xiang and Zhang, Zheng and Li, Zhihua and Chen, Xuanbai and Zhang, Qin and Bergamo, Alessandro and Jain, Anil K. and Xing, Yifan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025},
+  doi={10.1109/CVPR52734.2025.02268}
+}
+</pre>
+
+<nav class="back">
+  <a href="../">&larr; Back to all publications</a>
+</nav>
+
+</div>
+</body>
+</html>

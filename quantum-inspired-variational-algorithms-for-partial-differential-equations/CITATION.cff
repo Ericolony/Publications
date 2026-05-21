@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing"
+type: article
+authors:
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Sun
+    given-names: Chuhao
+  - family-names: Cohen
+    given-names: Asaf
+  - family-names: Stokes
+    given-names: James
+  - family-names: Veerapaneni
+    given-names: Shravan
+journal: Quantitative Finance
+year: 2024
+identifiers:
+  - type: other
+    value: "arXiv:2207.10838"
+    description: arXiv preprint
+url: "https://arxiv.org/abs/2207.10838"
+keywords:
+  - quantum-inspired algorithms
+  - variational Monte Carlo
+  - partial differential equations
+  - financial derivative pricing
+  - Black-Scholes
+  - neural-network quantum states

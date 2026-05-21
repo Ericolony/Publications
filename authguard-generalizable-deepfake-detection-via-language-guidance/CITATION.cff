@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "AuthGuard: Generalizable Deepfake Detection via Language Guidance"
+type: conference-paper
+authors:
+  - family-names: Shen
+    given-names: Guangyu
+  - family-names: Li
+    given-names: Zhihua
+  - family-names: Xu
+    given-names: Xiang
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Zhang
+    given-names: Zheng
+  - family-names: An
+    given-names: Dongsheng
+  - family-names: Tu
+    given-names: Zhuowen
+  - family-names: Xing
+    given-names: Yifan
+  - family-names: Zhang
+    given-names: Qin
+date-released: "2025-01-01"
+year: 2025
+collection-title: "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+arxiv: "2506.04501"
+url: "https://arxiv.org/abs/2506.04501"
+abstract: "We propose that incorporating language guidance can improve deepfake detection generalization by integrating human-like commonsense reasoning alongside statistical cues. The resulting framework, AuthGuard, achieves state-of-the-art deepfake detection accuracy in both in-distribution and out-of-distribution settings."
+keywords:
+  - deepfake detection
+  - language guidance
+  - vision-language contrastive learning
+  - face forgery detection
+  - generalization
+  - MLLM
+  - data uncertainty learning

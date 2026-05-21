@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing — Tianchen Zhao</title>
+  <meta name="description" content="Generalizes variational quantum Monte Carlo with neural-network quantum states to solve arbitrary time-dependent PDEs, demonstrated on multi-asset Black-Scholes option pricing.">
+  <meta name="keywords" content="quantum-inspired variational algorithms PDE, financial derivative pricing variational algorithm, variational PDE solver finance, quantum-inspired finance, scientific machine learning derivative pricing">
+  <meta name="author" content="Tianchen Zhao">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/quantum-inspired-variational-algorithms-for-partial-differential-equations/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing">
+  <meta property="og:description" content="Generalizes variational quantum Monte Carlo with neural-network quantum states to solve arbitrary time-dependent PDEs, demonstrated on multi-asset Black-Scholes option pricing.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/quantum-inspired-variational-algorithms-for-partial-differential-equations/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Quantum-Inspired Variational Algorithms for PDEs">
+  <meta name="twitter:description" content="Generalizes variational quantum Monte Carlo with neural-network quantum states to solve arbitrary time-dependent PDEs, demonstrated on multi-asset Black-Scholes option pricing.">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing",
+    "author": [
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "Chuhao Sun"},
+      {"@type": "Person", "name": "Asaf Cohen"},
+      {"@type": "Person", "name": "James Stokes"},
+      {"@type": "Person", "name": "Shravan Veerapaneni"}
+    ],
+    "datePublished": "2024",
+    "isPartOf": {
+      "@type": "Periodical",
+      "name": "Quantitative Finance"
+    },
+    "url": "https://ericolony.github.io/Publications/quantum-inspired-variational-algorithms-for-partial-differential-equations/",
+    "sameAs": "https://arxiv.org/abs/2207.10838"
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fafafa;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    header {
+      border-bottom: 2px solid #333;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+    .authors {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 0.4rem;
+    }
+    .venue {
+      font-size: 0.95rem;
+      color: #666;
+      font-style: italic;
+    }
+    .citations {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.3rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3rem;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 0.9rem;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-family: sans-serif;
+    }
+    .links a:hover { background: #555; }
+    .links a.todo {
+      background: #ccc;
+      color: #666;
+      cursor: default;
+    }
+    .abstract {
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.4rem; }
+    .faq-item { margin-bottom: 1.2rem; }
+    .faq-item strong { display: block; margin-bottom: 0.3rem; }
+    .keywords {
+      font-size: 0.9rem;
+      color: #555;
+      font-family: sans-serif;
+    }
+    .keywords span {
+      display: inline-block;
+      background: #eee;
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+      margin: 0.15rem 0.3rem 0.15rem 0;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      line-height: 1.5;
+    }
+    .related a {
+      text-decoration: none;
+      color: #1a5276;
+      border-bottom: 1px dashed #1a5276;
+    }
+    .related a:hover { color: #333; }
+    nav.back {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      font-family: sans-serif;
+      font-size: 0.9rem;
+    }
+    nav.back a { color: #1a5276; text-decoration: none; }
+    nav.back a:hover { text-decoration: underline; }
+    .cite-if { font-style: italic; color: #444; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing</h1>
+  <div class="authors">Tianchen Zhao, Chuhao Sun, Asaf Cohen, James Stokes, Shravan Veerapaneni</div>
+  <div class="venue">Quantitative Finance, 2024</div>
+  <div class="citations">Citations: 16</div>
+</header>
+
+<h2>Links</h2>
+<div class="links">
+  <a href="https://arxiv.org/abs/2207.10838">arXiv</a>
+  <a href="https://arxiv.org/pdf/2207.10838">PDF</a>
+  <a class="todo" title="Code repository coming soon">Code (TODO)</a>
+</div>
+
+<h2>Abstract</h2>
+<p class="abstract">Variational quantum Monte Carlo (VMC) combined with neural-network quantum states offers a novel angle of attack on the curse-of-dimensionality encountered in a particular class of partial differential equations (PDEs); namely, the real- and imaginary time-dependent Schr&ouml;dinger equation. In this paper, we present a simple generalization of VMC applicable to arbitrary time-dependent PDEs, showcasing the technique in the multi-asset Black-Scholes PDE for pricing European options contingent on many correlated underlying assets.</p>
+
+<h2>Summary</h2>
+<p>Generalizes variational quantum Monte Carlo with neural-network quantum states to solve arbitrary time-dependent PDEs, demonstrated on multi-asset Black-Scholes option pricing.</p>
+
+<h2>Key Contributions</h2>
+<ul>
+  <li>Generalization of VMC from the Schr&ouml;dinger equation to arbitrary time-dependent PDEs</li>
+  <li>Application to multi-asset Black-Scholes PDE for European option pricing</li>
+  <li>Neural-network quantum states for financial derivative pricing</li>
+</ul>
+
+<h2>Cite This Paper If...</h2>
+<p class="cite-if">Cite for: quantum-inspired variational PDE solvers, variational algorithms for financial derivative pricing, scientific machine learning methods for quantitative finance.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+  <strong>Q: How does this method differ from standard neural PDE solvers like PINNs?</strong>
+  <p>Unlike PINNs which enforce PDE constraints via collocation losses, this approach uses variational quantum Monte Carlo sampling with neural-network quantum states, offering a fundamentally different angle on the curse of dimensionality for time-dependent PDEs.</p>
+</div>
+
+<div class="faq-item">
+  <strong>Q: What financial applications does this cover?</strong>
+  <p>The method is demonstrated on multi-asset Black-Scholes PDE for pricing European options contingent on many correlated underlying assets, addressing the high dimensionality typical in derivative pricing with many underlyings.</p>
+</div>
+
+<div class="faq-item">
+  <strong>Q: Can the approach handle PDEs beyond Black-Scholes?</strong>
+  <p>Yes. The paper presents a general framework applicable to arbitrary time-dependent PDEs. The Black-Scholes application serves as a demonstration; the technique is not restricted to finance.</p>
+</div>
+
+<div class="faq-item">
+  <strong>Q: What is the connection to quantum computing?</strong>
+  <p>The method is quantum-inspired: it borrows the VMC framework originally developed for quantum many-body physics but runs entirely on classical hardware. No quantum computer is required.</p>
+</div>
+
+<h2>Keywords</h2>
+<div class="keywords">
+  <span>quantum-inspired variational algorithms PDE</span>
+  <span>financial derivative pricing variational algorithm</span>
+  <span>variational PDE solver finance</span>
+  <span>quantum-inspired finance</span>
+  <span>scientific machine learning derivative pricing</span>
+</div>
+
+<h2>Related Papers</h2>
+<div class="related">
+  <ul>
+    <li><a href="../scalable-neural-quantum-states-architecture-for-quantum-chemistry/">Scalable Neural Quantum States Architecture for Quantum Chemistry (2023)</a></li>
+    <li><a href="../natural-evolution-strategies-and-variational-monte-carlo/">Natural Evolution Strategies and Variational Monte Carlo (2021)</a></li>
+    <li><a href="../overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/">Overcoming Barriers to Scalability in Variational Quantum Monte Carlo (2021)</a></li>
+    <li><a href="../neural-quantum-states-for-scientific-computing/">Neural Quantum States for Scientific Computing (PhD Thesis, 2022)</a></li>
+  </ul>
+</div>
+
+<h2>BibTeX</h2>
+<pre>
+@article{zhao2024quantum,
+  title={Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing},
+  author={Zhao, Tianchen and Sun, Chuhao and Cohen, Asaf and Stokes, James and Veerapaneni, Shravan},
+  journal={Quantitative Finance},
+  year={2024},
+  eprint={2207.10838},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph}
+}
+</pre>
+
+<nav class="back">
+  <a href="../">&larr; Back to all publications</a>
+</nav>
+
+</div>
+</body>
+</html>

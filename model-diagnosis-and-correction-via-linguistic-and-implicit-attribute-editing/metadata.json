@@ -1,0 +1,38 @@
+{
+  "id": 14,
+  "title": "Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing",
+  "authors": ["Xuanbai Chen", "Xiang Xu", "Zhihua Li", "Tianchen Zhao", "Pietro Perona", "Qin Zhang", "Yifan Xing"],
+  "venue": "CVPR",
+  "year": 2025,
+  "citations": 1,
+  "slug": "model-diagnosis-and-correction-via-linguistic-and-implicit-attribute-editing",
+  "arxiv_id": null,
+  "doi": "10.1109/CVPR52734.2025.01332",
+  "semantic_scholar_id": "96475d59bbd156d8e6ce250087619744a87b158a",
+  "links": {
+    "arxiv": null,
+    "pdf": "TODO",
+    "code": "TODO",
+    "project": null
+  },
+  "abstract": "How can we troubleshoot a deep visual model, i.e. understand why it makes certain mistakes and further take action to correct its behavior? We design a Model Diagnosis and Correction system (MDC), an automated framework that analyzes the pattern of errors, proposes candidate causes of attributes, conducts hypothesis testing via attribute editing, and ultimately generates counterfactual training samples to improve the performance of the model. Unlike previous methods, in addition to the linguistic attributes, our method also incorporates the analysis for implicit causal attributes, those cannot to be accurately described by natural language. To achieve this, we propose an image editing module capable of leveraging both implicit and linguistic attributes to generate counterfactual images depicting error patterns and further experimentally validate causality relationships. Lastly, we enrich the training set with synthetic samples depicting verified causal attributes and retrain the model, further boosting accuracy and robustness. Extensive experiments on both generalized and specialized domains demonstrate the superiority of MDC in model diagnosis and correction. Specifically, we achieve an average relative improvement of 62.01% in HTER for face security application over state-of-the-art methods.",
+  "one_sentence_summary": "Automates model diagnosis and correction by analyzing error patterns, testing causal hypotheses via attribute editing, and generating counterfactual training samples for improved robustness.",
+  "key_contributions": [
+    "Automated MDC framework for error pattern analysis and causal hypothesis testing",
+    "Image editing module for both linguistic and implicit causal attributes",
+    "Counterfactual training sample generation for model correction",
+    "62.01% relative HTER improvement for face security applications"
+  ],
+  "citation_identity": "Cite for: model diagnosis, attribute editing, linguistic attribute control, correcting model behavior through interpretable attributes",
+  "search_phrases": [
+    "model diagnosis attribute editing",
+    "linguistic attribute editing",
+    "implicit attribute editing",
+    "model correction visual attributes",
+    "interpretable model correction"
+  ],
+  "topic_cluster": 2,
+  "related_papers": [3, 13, 15],
+  "bibtex_key": "chen2025model",
+  "canonical_url": "https://ericolony.github.io/Publications/model-diagnosis-and-correction-via-linguistic-and-implicit-attribute-editing/"
+}

@@ -1,0 +1,38 @@
+{
+  "id": 11,
+  "title": "Meta Variational Monte Carlo",
+  "authors": ["Tianchen Zhao", "James Stokes", "Oliver Knitter", "Brian Chen", "Shravan Veerapaneni"],
+  "venue": "arXiv",
+  "year": 2020,
+  "citations": 4,
+  "slug": "meta-variational-monte-carlo-arxiv",
+  "arxiv_id": "2011.10614",
+  "doi": null,
+  "semantic_scholar_id": null,
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2011.10614",
+    "pdf": "https://arxiv.org/pdf/2011.10614",
+    "code": null
+  },
+  "abstract": "An identification is found between meta-learning and the problem of determining the ground state of a randomly generated Hamiltonian drawn from a known ensemble. A model-agnostic meta-learning approach is proposed to solve the associated learning problem and a preliminary experimental study of random Max-Cut problems indicates that the resulting Meta Variational Monte Carlo accelerates training and improves convergence.",
+  "one_sentence_summary": "Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances.",
+  "key_contributions": [
+    "Identification between meta-learning and random Hamiltonian ground-state problems",
+    "Model-agnostic meta-learning approach for variational Monte Carlo",
+    "Accelerated training and improved convergence on Max-Cut"
+  ],
+  "citation_identity": "Cite for: meta-learning for variational Monte Carlo, transferable neural quantum state optimization, learning optimization strategies across quantum systems",
+  "search_phrases": [
+    "meta variational Monte Carlo",
+    "meta-learning variational Monte Carlo",
+    "transferable neural quantum states",
+    "learning to optimize VMC",
+    "meta-learning quantum many-body systems",
+    "neural quantum state transfer"
+  ],
+  "topic_cluster": 3,
+  "topic_cluster_name": "Neural Quantum States and Scientific Machine Learning",
+  "related_papers": [4, 5, 6, 16, 17],
+  "bibtex_key": "zhao2020meta_vmc",
+  "canonical_url": "https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/"
+}

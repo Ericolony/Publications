@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta-Variational Quantum Monte Carlo — Tianchen Zhao</title>
+  <meta name="description" content="Journal version presenting Meta Variational Monte Carlo, which applies meta-learning to accelerate neural quantum state optimization across random Hamiltonian ensembles.">
+  <meta property="og:title" content="Meta-Variational Quantum Monte Carlo">
+  <meta property="og:description" content="Journal version presenting Meta Variational Monte Carlo, which applies meta-learning to accelerate neural quantum state optimization across random Hamiltonian ensembles.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/meta-variational-quantum-monte-carlo/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Meta-Variational Quantum Monte Carlo">
+  <meta name="twitter:description" content="Journal version presenting Meta Variational Monte Carlo, which applies meta-learning to accelerate neural quantum state optimization across random Hamiltonian ensembles.">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/meta-variational-quantum-monte-carlo/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Meta-Variational Quantum Monte Carlo",
+    "author": [
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "James Stokes"},
+      {"@type": "Person", "name": "Oliver Knitter"},
+      {"@type": "Person", "name": "Brian Chen"},
+      {"@type": "Person", "name": "Shravan Veerapaneni"}
+    ],
+    "datePublished": "2023",
+    "publisher": {"@type": "Organization", "name": "Quantum Machine Intelligence"},
+    "description": "Journal version presenting Meta Variational Monte Carlo, which applies meta-learning to accelerate neural quantum state optimization across random Hamiltonian ensembles."
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #222; background: #fafafa; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header { border-bottom: 2px solid #333; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { font-size: 1.8rem; line-height: 1.3; margin: 0 0 0.75rem 0; }
+    .authors { font-size: 1rem; color: #444; margin-bottom: 0.5rem; }
+    .venue { font-size: 0.95rem; color: #666; }
+    .venue .citations { font-weight: bold; color: #333; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; }
+    .links a { display: inline-block; padding: 0.4rem 1rem; background: #333; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem; }
+    .links a:hover { background: #555; }
+    .links a.disabled { background: #aaa; cursor: default; }
+    section { margin-bottom: 2rem; }
+    h2 { font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    .faq dt { font-weight: bold; margin-top: 1rem; }
+    .faq dd { margin-left: 0; margin-bottom: 0.5rem; }
+    .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .keywords span { background: #e8e8e8; padding: 0.2rem 0.6rem; border-radius: 3px; font-size: 0.85rem; }
+    pre { background: #f0f0f0; padding: 1rem; overflow-x: auto; font-size: 0.85rem; border-radius: 4px; }
+    nav.back { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+    nav.back a { color: #333; }
+    @media (max-width: 600px) { h1 { font-size: 1.4rem; } .container { padding: 1rem; } }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Meta-Variational Quantum Monte Carlo</h1>
+    <p class="authors"><strong>Tianchen Zhao</strong>, James Stokes, Oliver Knitter, Brian Chen, Shravan Veerapaneni</p>
+    <p class="venue">Quantum Machine Intelligence, 2023 &middot; <span class="citations">0 citations</span></p>
+  </header>
+
+  <div class="links">
+    <a class="disabled" title="PDF link coming soon">PDF (TODO)</a>
+    <a class="disabled" title="Code link coming soon">Code (TODO)</a>
+    <a href="../meta-variational-monte-carlo-arxiv/">arXiv preprint version</a>
+  </div>
+
+  <section>
+    <h2>Abstract</h2>
+    <p>An identification is found between meta-learning and the problem of determining the ground state of a randomly generated Hamiltonian drawn from a known ensemble. A model-agnostic meta-learning approach is proposed to solve the associated learning problem and a preliminary experimental study of random Max-Cut problems indicates that the resulting Meta Variational Monte Carlo accelerates training and improves convergence.</p>
+  </section>
+
+  <section>
+    <h2>One-Sentence Summary</h2>
+    <p>Journal version presenting Meta Variational Monte Carlo, which applies meta-learning to accelerate neural quantum state optimization across random Hamiltonian ensembles.</p>
+  </section>
+
+  <section>
+    <h2>Key Contributions</h2>
+    <ul>
+      <li>Meta-learning framework for variational Monte Carlo optimization</li>
+      <li>Transferable initialization across random Hamiltonian instances</li>
+      <li>Accelerated training and improved convergence on Max-Cut problems</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Cite This Paper If...</h2>
+    <p>You are working on meta-learning for variational Monte Carlo, transferable neural quantum state optimization, or learning optimization strategies across quantum systems. This paper is relevant if you need methods for amortizing the cost of ground-state optimization across families of related Hamiltonians.</p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <dl class="faq">
+      <dt>What is Meta Variational Monte Carlo?</dt>
+      <dd>Meta VMC applies model-agnostic meta-learning (MAML) to the variational Monte Carlo framework. Instead of optimizing each Hamiltonian from scratch, the method learns a shared initialization that enables rapid adaptation to new Hamiltonian instances drawn from the same ensemble.</dd>
+
+      <dt>How does this relate to MAML?</dt>
+      <dd>The paper identifies a formal connection between the meta-learning objective and the problem of finding ground states for random Hamiltonians. The MAML framework is applied to learn transferable parameter initializations for neural quantum states.</dd>
+
+      <dt>What problems is Meta VMC tested on?</dt>
+      <dd>The experimental study focuses on random Max-Cut problems, where the method demonstrates accelerated training convergence compared to standard VMC with random initialization.</dd>
+
+      <dt>How does this differ from the arXiv preprint version?</dt>
+      <dd>This is the journal version published in Quantum Machine Intelligence (2023). The arXiv preprint (2011.10614) was posted in 2020. The journal version includes revisions and additional content from the peer review process.</dd>
+
+      <dt>Can Meta VMC be applied beyond Max-Cut?</dt>
+      <dd>Yes. The framework is general: any ensemble of Hamiltonians where instances share structural similarities can benefit from meta-learned initializations. This includes quantum chemistry problems, spin models, and other combinatorial optimization tasks.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Keywords</h2>
+    <div class="keywords">
+      <span>meta variational Monte Carlo</span>
+      <span>meta-learning variational Monte Carlo</span>
+      <span>transferable neural quantum states</span>
+      <span>learning to optimize VMC</span>
+      <span>meta-learning quantum many-body systems</span>
+      <span>neural quantum state transfer</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Related Papers</h2>
+    <ul>
+      <li><a href="../scalable-neural-quantum-states-architecture-for-quantum-chemistry/">Scalable Neural Quantum States Architecture for Quantum Chemistry</a> (ML:ST 2023)</li>
+      <li><a href="../natural-evolution-strategies-and-variational-monte-carlo/">Natural Evolution Strategies and Variational Monte Carlo</a> (ML:ST 2021)</li>
+      <li><a href="../overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/">Overcoming Barriers to Scalability in Variational Quantum Monte Carlo</a> (SC 2021)</li>
+      <li><a href="../meta-variational-monte-carlo-arxiv/">Meta Variational Monte Carlo</a> (arXiv 2020, preprint version)</li>
+      <li><a href="../neural-quantum-states-for-scientific-computing/">Neural Quantum States for Scientific Computing</a> (PhD Thesis 2022)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>BibTeX</h2>
+    <pre>@article{zhao2023meta,
+  title={Meta-Variational Quantum Monte Carlo},
+  author={Zhao, Tianchen and Stokes, James and Knitter, Oliver and Chen, Brian and Veerapaneni, Shravan},
+  journal={Quantum Machine Intelligence},
+  year={2023}
+}</pre>
+  </section>
+
+  <nav class="back">
+    <a href="../">&larr; Back to all publications</a>
+  </nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+# Tianchen Zhao — Publications
+
+> Research papers by Tianchen Zhao spanning deepfake detection, face anti-spoofing, generative modeling, neural quantum states, and scientific machine learning.
+
+## Topic Areas
+- Deepfake Detection and Face Security
+- Generative Modeling, Robustness, and Vision-Language Adaptation
+- Neural Quantum States and Scientific Machine Learning
+- Quantum-Inspired Scientific Computing and Finance
+
+## Papers
+
+### Deepfake Detection and Face Security
+
+- [Learning Self-Consistency for Deepfake Detection](https://ericolony.github.io/Publications/learning-self-consistency-for-deepfake-detection/) (ICCV 2021): Detects deepfakes by learning to extract and compare source-feature inconsistencies within forged images, achieving state-of-the-art cross-dataset generalization.
+
+- [Principles of Designing Robust Remote Face Anti-Spoofing Systems](https://ericolony.github.io/Publications/principles-of-designing-robust-remote-face-anti-spoofing-systems/) (arXiv 2024): Presents a comprehensive taxonomy of face anti-spoofing threats and proposes design principles for building robust systems resilient to digital injection, deepfake, and replay attacks.
+
+- [Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing](https://ericolony.github.io/Publications/optimal-transport-guided-source-free-adaptation-for-face-anti-spoofing/) (CVPR 2025): Enables privacy-preserving test-time adaptation of face anti-spoofing models via optimal transport-guided prototype matching and geodesic mixup augmentation.
+
+- [AuthGuard: Generalizable Deepfake Detection via Language Guidance](https://ericolony.github.io/Publications/authguard-generalizable-deepfake-detection-via-language-guidance/) (WACV 2025): Integrates language guidance and commonsense reasoning into deepfake detection via vision-language contrastive learning, achieving state-of-the-art generalization across unseen forgery methods.
+
+### Generative Modeling, Robustness, and Vision-Language Adaptation
+
+- [Diversity-Sensitive Conditional Generative Adversarial Networks](https://ericolony.github.io/Publications/diversity-sensitive-conditional-generative-adversarial-networks/) (ICLR 2019): Proposes a simple diversity-sensitive regularization for conditional GANs that explicitly encourages diverse outputs, solving mode collapse across image translation, inpainting, and video prediction.
+
+- [Adversarial Defense via Learning to Generate Diverse Attacks](https://ericolony.github.io/Publications/adversarial-defense-via-learning-to-generate-diverse-attacks/) (ICCV 2019): Trains a stochastic generator to produce diverse adversarial attacks, yielding more robust defenses than single-attack adversarial training.
+
+- [Salient Concept-Aware Generative Data Augmentation](https://ericolony.github.io/Publications/salient-concept-aware-generative-data-augmentation/) (arXiv 2025): Proposes a salient concept-aware generative augmentation framework that disentangles class-discriminative features from irrelevant context, improving fine-grained recognition under both conventional and long-tail settings.
+
+- [Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing](https://ericolony.github.io/Publications/model-diagnosis-and-correction-via-linguistic-and-implicit-attribute-editing/) (CVPR 2025): Automates model diagnosis and correction by analyzing error patterns, testing causal hypotheses via attribute editing, and generating counterfactual training samples for improved robustness.
+
+- [Decoupling Vision and Language: Codebook Anchored Visual Adaptation](https://ericolony.github.io/Publications/decoupling-vision-and-language-codebook-anchored-visual-adaptation/) (arXiv 2026): Introduces CRAFT, a discrete-codebook method for adapting vision encoders in LVLMs to domain-specific tasks without modifying the language model, enabling portable encoder adaptation across architectures.
+
+### Neural Quantum States and Scientific Machine Learning
+
+- [Scalable Neural Quantum States Architecture for Quantum Chemistry](https://ericolony.github.io/Publications/scalable-neural-quantum-states-architecture-for-quantum-chemistry/) (Machine Learning: Science and Technology 2023): Introduces GPU-scalable parallelization strategies for neural-network variational Monte Carlo applied to ab-initio quantum chemistry, achieving systematic speedups over existing neural-network methods.
+
+- [Natural Evolution Strategies and Variational Monte Carlo](https://ericolony.github.io/Publications/natural-evolution-strategies-and-variational-monte-carlo/) (Machine Learning: Science and Technology 2021): Introduces quantum natural evolution strategies as a geometric unification of quantum/classical black-box optimization algorithms, achieving competitive Max-Cut approximation ratios.
+
+- [Overcoming Barriers to Scalability in Variational Quantum Monte Carlo](https://ericolony.github.io/Publications/overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/) (SC 2021): Replaces MCMC with autoregressive exact sampling in variational quantum Monte Carlo, enabling GPU-scalable parallelism for up to ten-thousand dimensional problems.
+
+- [Natural Evolution Strategies and Quantum Approximate Optimization](https://ericolony.github.io/Publications/natural-evolution-strategies-and-quantum-approximate-optimization/) (arXiv 2020): Applies natural evolution strategies to quantum approximate optimization, achieving competitive Max-Cut approximation ratios via neural quantum states.
+
+- [Meta Variational Monte Carlo](https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/) (arXiv 2020): Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances.
+
+- [Meta-Variational Quantum Monte Carlo](https://ericolony.github.io/Publications/meta-variational-quantum-monte-carlo/) (Quantum Machine Intelligence 2023): Journal version presenting Meta Variational Monte Carlo, which applies meta-learning to accelerate neural quantum state optimization across random Hamiltonian ensembles.
+
+- [Neural Quantum States for Scientific Computing](https://ericolony.github.io/Publications/neural-quantum-states-for-scientific-computing/) (PhD Thesis, University of Michigan 2022): PhD thesis synthesizing neural quantum states for scientific computing, covering variational Monte Carlo for quantum chemistry, combinatorial optimization, and financial derivative pricing.
+
+### Quantum-Inspired Scientific Computing and Finance
+
+- [Quantum-Inspired Variational Algorithms for Partial Differential Equations: Application to Financial Derivative Pricing](https://ericolony.github.io/Publications/quantum-inspired-variational-algorithms-for-partial-differential-equations/) (Quantitative Finance 2024): Generalizes variational quantum Monte Carlo with neural-network quantum states to solve arbitrary time-dependent PDEs, demonstrated on multi-asset Black-Scholes option pricing.
+
+## Machine-Readable Index
+- papers.json: https://ericolony.github.io/Publications/papers.json
+- citation.bib: https://ericolony.github.io/Publications/citation.bib
+
+## How to Cite
+Each paper page includes a BibTeX entry. Visit the individual paper page listed above and copy the BibTeX block. For bulk citations, download `citation.bib` which contains entries for all papers.

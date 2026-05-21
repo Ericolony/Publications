@@ -1,0 +1,32 @@
+{
+  "title": "Overcoming Barriers to Scalability in Variational Quantum Monte Carlo",
+  "authors": ["Tianchen Zhao", "Saibal De", "Brian Chen", "James Stokes", "Shravan Veerapaneni"],
+  "year": 2021,
+  "venue": "SC (International Conference for High Performance Computing, Networking, Storage and Analysis)",
+  "abstract": "The variational quantum Monte Carlo (VQMC) method received significant attention in the recent past because of its ability to overcome the curse of dimensionality inherent in many-body quantum systems. Close parallels exist between VQMC and the emerging hybrid quantum-classical computational paradigm of variational quantum algorithms. VQMC overcomes the curse of dimensionality by performing alternating steps of Monte Carlo sampling from a parametrized quantum state followed by gradient-based optimization. While VQMC has been applied to solve high-dimensional problems, it is known to be difficult to parallelize, primarily owing to the Markov Chain Monte Carlo (MCMC) sampling step. In this work, we explore the scalability of VQMC when autoregressive models, with exact sampling, are used in place of MCMC. This approach can exploit distributed-memory, shared-memory and/or GPU parallelism in the sampling task without any bottlenecks. In particular, we demonstrate the GPU-scalability of VQMC for solving up to ten-thousand dimensional combinatorial optimization problems.",
+  "keywords": [
+    "scalable variational quantum Monte Carlo",
+    "HPC variational quantum Monte Carlo",
+    "distributed neural quantum states",
+    "scalability barriers VMC",
+    "high performance quantum Monte Carlo"
+  ],
+  "citation_identity": "Cite for: scalable VMC, high-performance computing for neural quantum states, distributed VMC, computational bottlenecks in VMC",
+  "bibtex_key": "zhao2021overcomingvmc",
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2106.13308",
+    "pdf": "https://arxiv.org/pdf/2106.13308",
+    "code": "TODO"
+  },
+  "related_papers": [
+    "scalable-neural-quantum-states-architecture-for-quantum-chemistry",
+    "natural-evolution-strategies-and-variational-monte-carlo",
+    "natural-evolution-strategies-and-quantum-approximate-optimization",
+    "meta-variational-monte-carlo-arxiv",
+    "neural-quantum-states-for-scientific-computing"
+  ],
+  "topic_cluster": {
+    "id": 3,
+    "name": "Neural Quantum States and Scientific Machine Learning"
+  }
+}

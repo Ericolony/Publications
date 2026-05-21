@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Natural Evolution Strategies and Quantum Approximate Optimization"
+type: article
+authors:
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Carleo
+    given-names: Giuseppe
+  - family-names: Stokes
+    given-names: James
+  - family-names: Veerapaneni
+    given-names: Shravan
+date-released: "2020-05-09"
+year: 2020
+journal: "arXiv preprint"
+arxiv: "2005.04447"
+url: "https://arxiv.org/abs/2005.04447"
+abstract: "A notion of quantum natural evolution strategies is introduced, which provides a geometric synthesis of a number of known quantum/classical algorithms for performing classical black-box optimization. The algorithmic framework is illustrated for approximate combinatorial optimization problems, and a systematic strategy is found for improving the approximation ratios."
+keywords:
+  - natural evolution strategies
+  - quantum approximate optimization
+  - QAOA
+  - neural quantum states
+  - Max-Cut
+  - gradient-free optimization

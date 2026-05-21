@@ -1,0 +1,31 @@
+{
+  "title": "Learning Self-Consistency for Deepfake Detection",
+  "authors": ["Tianchen Zhao", "Xiang Xu", "Mingze Xu", "Hui Ding", "Yuanjun Xiong", "Wei Xia"],
+  "year": 2021,
+  "venue": "ICCV",
+  "abstract": "We propose a new method to detect deepfake images using the cue of the source feature inconsistency within the forged images. It is based on the hypothesis that images' distinct source features can be preserved and extracted after going through state-of-the-art deepfake generation processes. We introduce a novel representation learning approach, called pair-wise self-consistency learning (PCL), for training ConvNets to extract these source features and detect deepfake images. It is accompanied by a new image synthesis approach, called inconsistency image generator (I2G), to provide richly annotated training data for PCL. Experimental results on seven popular datasets show that our models improve averaged AUC over the state of the art from 96.45% to 98.05% in the in-dataset evaluation and from 86.03% to 92.18% in the cross-dataset evaluation.",
+  "keywords": [
+    "deepfake detection self-consistency",
+    "generalizable deepfake detection",
+    "source feature inconsistency",
+    "patch-wise consistency learning",
+    "cross-dataset face forgery detection",
+    "robust deepfake detection"
+  ],
+  "citation_identity": "Cite for: generalizable deepfake detection, self-consistency learning for face forgery detection, source feature inconsistency, patch-wise consistency learning, cross-dataset deepfake detection",
+  "bibtex_key": "zhao2021learning",
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2012.09311",
+    "pdf": "https://arxiv.org/pdf/2012.09311",
+    "code": "TODO"
+  },
+  "related_papers": [
+    "principles-of-designing-robust-remote-face-anti-spoofing-systems",
+    "optimal-transport-guided-source-free-adaptation-for-face-anti-spoofing",
+    "authguard-generalizable-deepfake-detection-via-language-guidance"
+  ],
+  "topic_cluster": {
+    "id": 1,
+    "name": "Deepfake Detection and Face Security"
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoupling Vision and Language: Codebook Anchored Visual Adaptation — Tianchen Zhao</title>
+  <meta name="description" content="Introduces CRAFT, a discrete-codebook method for adapting vision encoders in LVLMs to domain-specific tasks without modifying the language model, enabling portable encoder adaptation across architectures.">
+  <meta property="og:title" content="Decoupling Vision and Language: Codebook Anchored Visual Adaptation">
+  <meta property="og:description" content="Introduces CRAFT, a discrete-codebook method for adapting vision encoders in LVLMs to domain-specific tasks without modifying the language model, enabling portable encoder adaptation across architectures.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/decoupling-vision-and-language-codebook-anchored-visual-adaptation/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Decoupling Vision and Language: Codebook Anchored Visual Adaptation">
+  <meta name="twitter:description" content="Introduces CRAFT, a discrete-codebook method for adapting vision encoders in LVLMs to domain-specific tasks without modifying the language model, enabling portable encoder adaptation across architectures.">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/decoupling-vision-and-language-codebook-anchored-visual-adaptation/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Decoupling Vision and Language: Codebook Anchored Visual Adaptation",
+    "author": [
+      {"@type": "Person", "name": "Jason Wu"},
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "Chang Liu"},
+      {"@type": "Person", "name": "Jiarui Cai"},
+      {"@type": "Person", "name": "Zheng Zhang"},
+      {"@type": "Person", "name": "Zhuowei Li"},
+      {"@type": "Person", "name": "Aaditya Singh"},
+      {"@type": "Person", "name": "Xiang Xu"},
+      {"@type": "Person", "name": "Mani Srivastava"},
+      {"@type": "Person", "name": "Jonathan Wu"}
+    ],
+    "datePublished": "2026",
+    "publisher": {"@type": "Organization", "name": "arXiv"},
+    "description": "Introduces CRAFT, a discrete-codebook method for adapting vision encoders in LVLMs to domain-specific tasks without modifying the language model, enabling portable encoder adaptation across architectures.",
+    "identifier": {"@type": "PropertyValue", "propertyID": "arXiv", "value": "2602.19449"}
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #222; background: #fafafa; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header { border-bottom: 2px solid #333; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { font-size: 1.8rem; line-height: 1.3; margin: 0 0 0.75rem 0; }
+    .authors { font-size: 1rem; color: #444; margin-bottom: 0.5rem; }
+    .venue { font-size: 0.95rem; color: #666; }
+    .venue .citations { font-weight: bold; color: #333; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; }
+    .links a { display: inline-block; padding: 0.4rem 1rem; background: #333; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem; }
+    .links a:hover { background: #555; }
+    .links a.disabled { background: #aaa; cursor: default; }
+    section { margin-bottom: 2rem; }
+    h2 { font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    .faq dt { font-weight: bold; margin-top: 1rem; }
+    .faq dd { margin-left: 0; margin-bottom: 0.5rem; }
+    .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .keywords span { background: #e8e8e8; padding: 0.2rem 0.6rem; border-radius: 3px; font-size: 0.85rem; }
+    pre { background: #f0f0f0; padding: 1rem; overflow-x: auto; font-size: 0.85rem; border-radius: 4px; }
+    nav.back { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+    nav.back a { color: #333; }
+    @media (max-width: 600px) { h1 { font-size: 1.4rem; } .container { padding: 1rem; } }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Decoupling Vision and Language: Codebook Anchored Visual Adaptation</h1>
+    <p class="authors">Jason Wu, <strong>Tianchen Zhao</strong>, Chang Liu, Jiarui Cai, Zheng Zhang, Zhuowei Li, Aaditya Singh, Xiang Xu, Mani Srivastava, Jonathan Wu</p>
+    <p class="venue">arXiv 2026 &middot; <span class="citations">0 citations</span></p>
+  </header>
+
+  <div class="links">
+    <a href="https://arxiv.org/abs/2602.19449">arXiv</a>
+    <a href="https://arxiv.org/pdf/2602.19449">PDF</a>
+    <a class="disabled" title="Code link coming soon">Code (TODO)</a>
+  </div>
+
+  <section>
+    <h2>Abstract</h2>
+    <p>Large Vision-Language Models (LVLMs) use their vision encoders to translate images into representations for downstream reasoning, but the encoders often underperform in domain-specific visual tasks such as medical image diagnosis or fine-grained classification, where representation errors can cascade through the language model, leading to incorrect responses. Existing adaptation methods modify the continuous feature interface between encoder and language model through projector tuning or other parameter-efficient updates, which still couples the two components and requires re-alignment whenever the encoder changes. We introduce CRAFT (Codebook RegulAted Fine-Tuning), a lightweight method that fine-tunes the encoder using a discrete codebook that anchors visual representations to a stable token space, achieving domain adaptation without modifying other parts of the model. This decoupled design allows the adapted encoder to seamlessly boost the performance of LVLMs with different language architectures, as long as they share the same codebook. Empirically, CRAFT achieves an average gain of 13.51% across 10 domain-specific benchmarks such as VQARAD and PlantVillage, while preserving the LLM's linguistic capabilities and outperforming peer methods that operate on continuous tokens.</p>
+  </section>
+
+  <section>
+    <h2>One-Sentence Summary</h2>
+    <p>Introduces CRAFT, a discrete-codebook method for adapting vision encoders in LVLMs to domain-specific tasks without modifying the language model, enabling portable encoder adaptation across architectures.</p>
+  </section>
+
+  <section>
+    <h2>Key Contributions</h2>
+    <ul>
+      <li>CRAFT: codebook-regulated fine-tuning that decouples vision encoder adaptation from the language model</li>
+      <li>Discrete codebook anchoring for stable, portable visual representations</li>
+      <li>13.51% average gain across 10 domain-specific benchmarks while preserving linguistic capabilities</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Cite This Paper If...</h2>
+    <p>You are working on vision-language adaptation, codebook-anchored visual adaptation, or decoupling visual and language representations. This paper is relevant if you need to adapt a vision encoder for domain-specific tasks without retraining the language model, or if you want portable encoder fine-tuning that transfers across different LLM backbones.</p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <dl class="faq">
+      <dt>What is CRAFT and how does it differ from projector tuning?</dt>
+      <dd>CRAFT (Codebook RegulAted Fine-Tuning) fine-tunes the vision encoder using a discrete codebook that maps visual features to a stable token space. Unlike projector tuning, which couples the encoder and language model through continuous features, CRAFT's discrete interface means the encoder can be swapped or updated independently.</dd>
+
+      <dt>Why use a discrete codebook instead of continuous features?</dt>
+      <dd>Continuous features tightly couple the encoder and language model, requiring re-alignment whenever either component changes. A discrete codebook provides a stable interface: as long as both components share the same codebook vocabulary, the adapted encoder works with any compatible language model.</dd>
+
+      <dt>What domains does CRAFT improve on?</dt>
+      <dd>CRAFT is evaluated on 10 domain-specific benchmarks including medical imaging (VQARAD), agriculture (PlantVillage), and other fine-grained visual tasks, achieving an average gain of 13.51% while preserving the LLM's general linguistic capabilities.</dd>
+
+      <dt>Can CRAFT be applied to different LVLM architectures?</dt>
+      <dd>Yes. The decoupled design is a key advantage: an encoder fine-tuned with CRAFT can boost performance across LVLMs with different language architectures, as long as they share the same codebook. This portability is unique among vision-language adaptation methods.</dd>
+
+      <dt>Does CRAFT hurt the language model's general capabilities?</dt>
+      <dd>No. Because CRAFT only modifies the vision encoder and leaves the language model untouched, the LLM's linguistic capabilities are fully preserved. This is confirmed empirically across the benchmark suite.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Keywords</h2>
+    <div class="keywords">
+      <span>codebook anchored visual adaptation</span>
+      <span>decoupling vision and language</span>
+      <span>vision-language model adaptation</span>
+      <span>visual adaptation codebook</span>
+      <span>efficient vision-language adaptation</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Related Papers</h2>
+    <ul>
+      <li><a href="../salient-concept-aware-generative-data-augmentation/">Salient Concept-Aware Generative Data Augmentation</a> (arXiv 2025)</li>
+      <li><a href="../model-diagnosis-and-correction-via-linguistic-and-implicit-attribute-editing/">Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing</a> (CVPR 2025)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>BibTeX</h2>
+    <pre>@article{wu2026decoupling,
+  title={Decoupling Vision and Language: Codebook Anchored Visual Adaptation},
+  author={Wu, Jason and Zhao, Tianchen and Liu, Chang and Cai, Jiarui and Zhang, Zheng and Li, Zhuowei and Singh, Aaditya and Xu, Xiang and Srivastava, Mani and Wu, Jonathan},
+  journal={arXiv preprint arXiv:2602.19449},
+  year={2026}
+}</pre>
+  </section>
+
+  <nav class="back">
+    <a href="../">&larr; Back to all publications</a>
+  </nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Variational Monte Carlo — Tianchen Zhao</title>
+  <meta name="description" content="Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances.">
+  <meta name="keywords" content="meta-learning, variational Monte Carlo, neural quantum states, transferable optimization, Max-Cut, quantum many-body systems">
+  <meta name="author" content="Tianchen Zhao">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Meta Variational Monte Carlo">
+  <meta property="og:description" content="Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Meta Variational Monte Carlo">
+  <meta name="twitter:description" content="Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances.">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Meta Variational Monte Carlo",
+    "headline": "Meta Variational Monte Carlo",
+    "author": [
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "James Stokes"},
+      {"@type": "Person", "name": "Oliver Knitter"},
+      {"@type": "Person", "name": "Brian Chen"},
+      {"@type": "Person", "name": "Shravan Veerapaneni"}
+    ],
+    "datePublished": "2020",
+    "publisher": {"@type": "Organization", "name": "arXiv"},
+    "url": "https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/",
+    "sameAs": "https://arxiv.org/abs/2011.10614",
+    "description": "Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances."
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.5rem; }
+    .authors { color: #555; font-size: 1.05rem; margin-bottom: 0.3rem; }
+    .venue { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .venue .citations { background: #e8f0fe; color: #1a56db; padding: 2px 8px; border-radius: 3px; font-size: 0.85rem; }
+    .links { margin-bottom: 2rem; }
+    .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: #f0f0f0;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .links a:hover { background: #ddd; }
+    h2 { font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; margin-top: 2rem; }
+    .abstract { text-align: justify; }
+    .summary { font-style: italic; color: #444; margin: 1rem 0; }
+    .contributions ul { padding-left: 1.2rem; }
+    .contributions li { margin-bottom: 0.4rem; }
+    .faq dt { font-weight: bold; margin-top: 1rem; }
+    .faq dd { margin-left: 0; margin-bottom: 0.5rem; }
+    .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .keywords span {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 0.85rem;
+    }
+    .related-list { list-style: none; padding: 0; }
+    .related-list li { margin-bottom: 0.4rem; }
+    .related-list a { color: #1a56db; }
+    pre.bibtex {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .nav { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.9rem; }
+    .nav a { color: #1a56db; }
+    .cite-if { background: #fffde7; border-left: 3px solid #fbc02d; padding: 0.8rem 1rem; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Meta Variational Monte Carlo</h1>
+  <div class="authors">Tianchen Zhao, James Stokes, Oliver Knitter, Brian Chen, Shravan Veerapaneni</div>
+  <div class="venue">arXiv, 2020 <span class="citations">4 citations</span></div>
+
+  <div class="links">
+    <a href="https://arxiv.org/abs/2011.10614">arXiv</a>
+    <a href="https://arxiv.org/pdf/2011.10614">PDF</a>
+    <a href="#">Code (coming soon)</a>
+  </div>
+
+  <h2>Abstract</h2>
+  <p class="abstract">An identification is found between meta-learning and the problem of determining the ground state of a randomly generated Hamiltonian drawn from a known ensemble. A model-agnostic meta-learning approach is proposed to solve the associated learning problem and a preliminary experimental study of random Max-Cut problems indicates that the resulting Meta Variational Monte Carlo accelerates training and improves convergence.</p>
+
+  <h2>Summary</h2>
+  <p class="summary">Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances.</p>
+
+  <h2>Key Contributions</h2>
+  <div class="contributions">
+    <ul>
+      <li>Identification between meta-learning and random Hamiltonian ground-state problems</li>
+      <li>Model-agnostic meta-learning approach for variational Monte Carlo</li>
+      <li>Accelerated training and improved convergence on Max-Cut</li>
+    </ul>
+  </div>
+
+  <div class="cite-if">
+    <strong>Cite this paper if</strong> your work involves meta-learning for variational Monte Carlo, transferable neural quantum state optimization, or learning optimization strategies across quantum systems.
+  </div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>What is Meta Variational Monte Carlo?</dt>
+    <dd>Meta VMC uses model-agnostic meta-learning (MAML) to find initializations for neural quantum state parameters that transfer well across an ensemble of randomly generated Hamiltonians, accelerating convergence on new problem instances.</dd>
+
+    <dt>How does this differ from standard VMC?</dt>
+    <dd>Standard VMC trains from scratch for each Hamiltonian. Meta VMC learns a shared initialization across an ensemble of problems, so fine-tuning on a new instance requires far fewer optimization steps.</dd>
+
+    <dt>What problems does Meta VMC address?</dt>
+    <dd>The paper demonstrates on random Max-Cut problems, but the framework applies to any setting where one must solve many related ground-state problems from a known distribution of Hamiltonians.</dd>
+
+    <dt>Is there a journal version of this paper?</dt>
+    <dd>Yes. This arXiv preprint (2020) was later published in Quantum Machine Intelligence (2023) under the title "Meta-Variational Quantum Monte Carlo."</dd>
+
+    <dt>Can meta-learning be applied to quantum chemistry?</dt>
+    <dd>In principle, yes. If one has an ensemble of molecular Hamiltonians (e.g., varying geometries), meta-learning could provide transferable initializations for neural quantum state solvers.</dd>
+  </dl>
+
+  <h2>Keywords</h2>
+  <div class="keywords">
+    <span>meta variational Monte Carlo</span>
+    <span>meta-learning variational Monte Carlo</span>
+    <span>transferable neural quantum states</span>
+    <span>learning to optimize VMC</span>
+    <span>meta-learning quantum many-body systems</span>
+    <span>neural quantum state transfer</span>
+  </div>
+
+  <h2>Related Papers</h2>
+  <ul class="related-list">
+    <li><a href="../scalable-neural-quantum-states-architecture-for-quantum-chemistry/">Scalable Neural Quantum States Architecture for Quantum Chemistry</a> (ML:ST 2023)</li>
+    <li><a href="../natural-evolution-strategies-and-variational-monte-carlo/">Natural Evolution Strategies and Variational Monte Carlo</a> (ML:ST 2021)</li>
+    <li><a href="../overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/">Overcoming Barriers to Scalability in Variational Quantum Monte Carlo</a> (SC 2021)</li>
+    <li><a href="../meta-variational-quantum-monte-carlo/">Meta-Variational Quantum Monte Carlo</a> (QMI 2023, journal version)</li>
+    <li><a href="../neural-quantum-states-for-scientific-computing/">Neural Quantum States for Scientific Computing</a> (PhD Thesis, 2022)</li>
+  </ul>
+
+  <h2>BibTeX</h2>
+  <pre class="bibtex">@article{zhao2020meta_vmc,
+  title={Meta Variational Monte Carlo},
+  author={Zhao, Tianchen and Stokes, James and Knitter, Oliver and Chen, Brian and Veerapaneni, Shravan},
+  journal={arXiv preprint arXiv:2011.10614},
+  year={2020}
+}</pre>
+
+  <div class="nav">
+    <a href="../">&larr; All Publications</a>
+  </div>
+
+</div>
+</body>
+</html>

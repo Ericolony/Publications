@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing"
+authors:
+  - family-names: Chen
+    given-names: Xuanbai
+  - family-names: Xu
+    given-names: Xiang
+  - family-names: Li
+    given-names: Zhihua
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Perona
+    given-names: Pietro
+  - family-names: Zhang
+    given-names: Qin
+  - family-names: Xing
+    given-names: Yifan
+doi: "10.1109/CVPR52734.2025.01332"
+date-released: "2025-01-01"
+type: conference-paper
+conference:
+  name: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+year: 2025
+keywords:
+  - model diagnosis
+  - attribute editing
+  - counterfactual training
+  - face security
+  - model correction

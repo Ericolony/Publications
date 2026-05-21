@@ -1,0 +1,38 @@
+{
+  "id": 16,
+  "title": "Meta-Variational Quantum Monte Carlo",
+  "authors": ["Tianchen Zhao", "James Stokes", "Oliver Knitter", "Brian Chen", "Shravan Veerapaneni"],
+  "venue": "Quantum Machine Intelligence",
+  "year": 2023,
+  "citations": 0,
+  "slug": "meta-variational-quantum-monte-carlo",
+  "arxiv_id": null,
+  "doi": "TODO",
+  "semantic_scholar_id": null,
+  "links": {
+    "arxiv": null,
+    "pdf": "TODO",
+    "code": "TODO",
+    "project": null
+  },
+  "abstract": "An identification is found between meta-learning and the problem of determining the ground state of a randomly generated Hamiltonian drawn from a known ensemble. A model-agnostic meta-learning approach is proposed to solve the associated learning problem and a preliminary experimental study of random Max-Cut problems indicates that the resulting Meta Variational Monte Carlo accelerates training and improves convergence.",
+  "one_sentence_summary": "Journal version presenting Meta Variational Monte Carlo, which applies meta-learning to accelerate neural quantum state optimization across random Hamiltonian ensembles.",
+  "key_contributions": [
+    "Meta-learning framework for variational Monte Carlo optimization",
+    "Transferable initialization across random Hamiltonian instances",
+    "Accelerated training and improved convergence on Max-Cut problems"
+  ],
+  "citation_identity": "Cite for: meta-learning for variational Monte Carlo, transferable neural quantum state optimization, learning optimization strategies across quantum systems",
+  "search_phrases": [
+    "meta variational Monte Carlo",
+    "meta-learning variational Monte Carlo",
+    "transferable neural quantum states",
+    "learning to optimize VMC",
+    "meta-learning quantum many-body systems",
+    "neural quantum state transfer"
+  ],
+  "topic_cluster": 3,
+  "related_papers": [4, 5, 6, 11, 17],
+  "bibtex_key": "zhao2023meta",
+  "canonical_url": "https://ericolony.github.io/Publications/meta-variational-quantum-monte-carlo/"
+}

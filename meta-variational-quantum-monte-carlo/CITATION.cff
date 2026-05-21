@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Meta-Variational Quantum Monte Carlo"
+authors:
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Stokes
+    given-names: James
+  - family-names: Knitter
+    given-names: Oliver
+  - family-names: Chen
+    given-names: Brian
+  - family-names: Veerapaneni
+    given-names: Shravan
+date-released: "2023-01-01"
+type: article
+journal: "Quantum Machine Intelligence"
+year: 2023
+keywords:
+  - meta-learning
+  - variational Monte Carlo
+  - neural quantum states
+  - combinatorial optimization
+  - quantum many-body systems

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing — Tianchen Zhao</title>
+  <meta name="description" content="Automates model diagnosis and correction by analyzing error patterns, testing causal hypotheses via attribute editing, and generating counterfactual training samples for improved robustness.">
+  <meta property="og:title" content="Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing">
+  <meta property="og:description" content="Automates model diagnosis and correction by analyzing error patterns, testing causal hypotheses via attribute editing, and generating counterfactual training samples for improved robustness.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericolony.github.io/Publications/model-diagnosis-and-correction-via-linguistic-and-implicit-attribute-editing/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing">
+  <meta name="twitter:description" content="Automates model diagnosis and correction by analyzing error patterns, testing causal hypotheses via attribute editing, and generating counterfactual training samples for improved robustness.">
+  <link rel="canonical" href="https://ericolony.github.io/Publications/model-diagnosis-and-correction-via-linguistic-and-implicit-attribute-editing/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing",
+    "author": [
+      {"@type": "Person", "name": "Xuanbai Chen"},
+      {"@type": "Person", "name": "Xiang Xu"},
+      {"@type": "Person", "name": "Zhihua Li"},
+      {"@type": "Person", "name": "Tianchen Zhao"},
+      {"@type": "Person", "name": "Pietro Perona"},
+      {"@type": "Person", "name": "Qin Zhang"},
+      {"@type": "Person", "name": "Yifan Xing"}
+    ],
+    "datePublished": "2025",
+    "publisher": {"@type": "Organization", "name": "CVPR"},
+    "description": "Automates model diagnosis and correction by analyzing error patterns, testing causal hypotheses via attribute editing, and generating counterfactual training samples for improved robustness.",
+    "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.1109/CVPR52734.2025.01332"}
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; color: #222; background: #fafafa; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header { border-bottom: 2px solid #333; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { font-size: 1.8rem; line-height: 1.3; margin: 0 0 0.75rem 0; }
+    .authors { font-size: 1rem; color: #444; margin-bottom: 0.5rem; }
+    .venue { font-size: 0.95rem; color: #666; }
+    .venue .citations { font-weight: bold; color: #333; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; }
+    .links a { display: inline-block; padding: 0.4rem 1rem; background: #333; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem; }
+    .links a:hover { background: #555; }
+    .links a.disabled { background: #aaa; cursor: default; }
+    section { margin-bottom: 2rem; }
+    h2 { font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    .faq dt { font-weight: bold; margin-top: 1rem; }
+    .faq dd { margin-left: 0; margin-bottom: 0.5rem; }
+    .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .keywords span { background: #e8e8e8; padding: 0.2rem 0.6rem; border-radius: 3px; font-size: 0.85rem; }
+    pre { background: #f0f0f0; padding: 1rem; overflow-x: auto; font-size: 0.85rem; border-radius: 4px; }
+    nav.back { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+    nav.back a { color: #333; }
+    @media (max-width: 600px) { h1 { font-size: 1.4rem; } .container { padding: 1rem; } }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing</h1>
+    <p class="authors">Xuanbai Chen, Xiang Xu, Zhihua Li, <strong>Tianchen Zhao</strong>, Pietro Perona, Qin Zhang, Yifan Xing</p>
+    <p class="venue">CVPR 2025 &middot; <span class="citations">1 citation</span></p>
+  </header>
+
+  <div class="links">
+    <a href="https://doi.org/10.1109/CVPR52734.2025.01332">DOI</a>
+    <a class="disabled" title="PDF link coming soon">PDF (TODO)</a>
+    <a class="disabled" title="Code link coming soon">Code (TODO)</a>
+  </div>
+
+  <section>
+    <h2>Abstract</h2>
+    <p>How can we troubleshoot a deep visual model, i.e. understand why it makes certain mistakes and further take action to correct its behavior? We design a Model Diagnosis and Correction system (MDC), an automated framework that analyzes the pattern of errors, proposes candidate causes of attributes, conducts hypothesis testing via attribute editing, and ultimately generates counterfactual training samples to improve the performance of the model. Unlike previous methods, in addition to the linguistic attributes, our method also incorporates the analysis for implicit causal attributes, those cannot to be accurately described by natural language. To achieve this, we propose an image editing module capable of leveraging both implicit and linguistic attributes to generate counterfactual images depicting error patterns and further experimentally validate causality relationships. Lastly, we enrich the training set with synthetic samples depicting verified causal attributes and retrain the model, further boosting accuracy and robustness. Extensive experiments on both generalized and specialized domains demonstrate the superiority of MDC in model diagnosis and correction. Specifically, we achieve an average relative improvement of 62.01% in HTER for face security application over state-of-the-art methods.</p>
+  </section>
+
+  <section>
+    <h2>One-Sentence Summary</h2>
+    <p>Automates model diagnosis and correction by analyzing error patterns, testing causal hypotheses via attribute editing, and generating counterfactual training samples for improved robustness.</p>
+  </section>
+
+  <section>
+    <h2>Key Contributions</h2>
+    <ul>
+      <li>Automated MDC framework for error pattern analysis and causal hypothesis testing</li>
+      <li>Image editing module for both linguistic and implicit causal attributes</li>
+      <li>Counterfactual training sample generation for model correction</li>
+      <li>62.01% relative HTER improvement for face security applications</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Cite This Paper If...</h2>
+    <p>You are working on model diagnosis, attribute editing, linguistic attribute control, or correcting model behavior through interpretable attributes. This paper is relevant if you need automated tools for understanding why visual models fail and generating targeted counterfactual data to fix those failures.</p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <dl class="faq">
+      <dt>What is the MDC framework and how does it diagnose model errors?</dt>
+      <dd>MDC (Model Diagnosis and Correction) is an automated pipeline that analyzes a model's error patterns, proposes candidate causal attributes, tests hypotheses via controlled attribute editing, and generates counterfactual training samples to correct the identified failure modes.</dd>
+
+      <dt>How does MDC handle implicit attributes that cannot be described in language?</dt>
+      <dd>Unlike prior methods that rely solely on linguistic attributes, MDC introduces an image editing module that operates on both linguistic and implicit causal attributes, enabling it to capture failure modes tied to visual patterns that resist verbal description.</dd>
+
+      <dt>What is counterfactual training sample generation?</dt>
+      <dd>After identifying causal attributes through hypothesis testing, MDC generates synthetic images that depict verified causal patterns and adds them to the training set. This targeted augmentation corrects the model's behavior on identified failure modes.</dd>
+
+      <dt>How significant is the improvement on face security tasks?</dt>
+      <dd>MDC achieves a 62.01% average relative improvement in HTER (Half Total Error Rate) for face security applications compared to state-of-the-art methods, demonstrating substantial practical impact.</dd>
+
+      <dt>Can MDC be applied to domains beyond face security?</dt>
+      <dd>Yes. The paper demonstrates MDC on both generalized and specialized domains. The framework is domain-agnostic; any visual classification model can be diagnosed and corrected through the attribute editing pipeline.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Keywords</h2>
+    <div class="keywords">
+      <span>model diagnosis attribute editing</span>
+      <span>linguistic attribute editing</span>
+      <span>implicit attribute editing</span>
+      <span>model correction visual attributes</span>
+      <span>interpretable model correction</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Related Papers</h2>
+    <ul>
+      <li><a href="../adversarial-defense-via-learning-to-generate-diverse-attacks/">Adversarial Defense via Learning to Generate Diverse Attacks</a> (ICCV 2019)</li>
+      <li><a href="../salient-concept-aware-generative-data-augmentation/">Salient Concept-Aware Generative Data Augmentation</a> (arXiv 2025)</li>
+      <li><a href="../decoupling-vision-and-language-codebook-anchored-visual-adaptation/">Decoupling Vision and Language: Codebook Anchored Visual Adaptation</a> (arXiv 2026)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>BibTeX</h2>
+    <pre>@inproceedings{chen2025model,
+  title={Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing},
+  author={Chen, Xuanbai and Xu, Xiang and Li, Zhihua and Zhao, Tianchen and Perona, Pietro and Zhang, Qin and Xing, Yifan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025},
+  doi={10.1109/CVPR52734.2025.01332}
+}</pre>
+  </section>
+
+  <nav class="back">
+    <a href="../">&larr; Back to all publications</a>
+  </nav>
+</div>
+</body>
+</html>

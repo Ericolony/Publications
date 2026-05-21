@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Principles of Designing Robust Remote Face Anti-Spoofing Systems"
+type: article
+authors:
+  - family-names: Xu
+    given-names: Xiang
+  - family-names: Zhao
+    given-names: Tianchen
+  - family-names: Zhang
+    given-names: Zheng
+  - family-names: Li
+    given-names: Zhihua
+  - family-names: Wu
+    given-names: Jon
+  - family-names: Achille
+    given-names: Alessandro
+  - family-names: Srivastava
+    given-names: Mani
+year: 2024
+identifiers:
+  - type: other
+    value: "arXiv:2406.03684"
+    description: arXiv preprint
+url: "https://arxiv.org/abs/2406.03684"
+keywords:
+  - face anti-spoofing
+  - presentation attack detection
+  - face liveness detection
+  - biometric security
+  - digital injection attacks
+  - deepfake defense
+  - active sensors
