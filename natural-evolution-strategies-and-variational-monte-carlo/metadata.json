@@ -1,6 +1,11 @@
 {
   "title": "Natural Evolution Strategies and Variational Monte Carlo",
-  "authors": ["Tianchen Zhao", "Giuseppe Carleo", "James Stokes", "Shravan Veerapaneni"],
+  "authors": [
+    "Tianchen Zhao",
+    "Giuseppe Carleo",
+    "James Stokes",
+    "Shravan Veerapaneni"
+  ],
   "year": 2021,
   "venue": "Machine Learning: Science and Technology",
   "abstract": "A notion of quantum natural evolution strategies is introduced, which provides a geometric synthesis of a number of known quantum/classical algorithms for performing classical black-box optimization. Recent work of Gomes et al. [2019] on heuristic combinatorial optimization using neural quantum states is pedagogically reviewed in this context, emphasizing the connection with natural evolution strategies. The algorithmic framework is illustrated for approximate combinatorial optimization problems, and a systematic strategy is found for improving the approximation ratios. In particular it is found that natural evolution strategies can achieve approximation ratios competitive with widely used heuristic algorithms for Max-Cut, at the expense of increased computation time.",
@@ -16,7 +21,8 @@
   "links": {
     "arxiv": "https://arxiv.org/abs/2005.04447",
     "pdf": "https://arxiv.org/pdf/2005.04447",
-    "code": "TODO"
+    "code": "TODO",
+    "doi": "https://doi.org/10.1088/2632-2153/abcb50"
   },
   "related_papers": [
     "scalable-neural-quantum-states-architecture-for-quantum-chemistry",
@@ -28,5 +34,6 @@
   "topic_cluster": {
     "id": 3,
     "name": "Neural Quantum States and Scientific Machine Learning"
-  }
+  },
+  "openalex_id": "W3098417679"
 }

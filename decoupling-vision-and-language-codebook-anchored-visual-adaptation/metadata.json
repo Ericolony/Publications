@@ -1,7 +1,18 @@
 {
   "id": 15,
   "title": "Decoupling Vision and Language: Codebook Anchored Visual Adaptation",
-  "authors": ["Jason Wu", "Tianchen Zhao", "Chang Liu", "Jiarui Cai", "Zheng Zhang", "Zhuowei Li", "Aaditya Singh", "Xiang Xu", "Mani Srivastava", "Jonathan Wu"],
+  "authors": [
+    "Jason Wu",
+    "Tianchen Zhao",
+    "Chang Liu",
+    "Jiarui Cai",
+    "Zheng Zhang",
+    "Zhuowei Li",
+    "Aaditya Singh",
+    "Xiang Xu",
+    "Mani Srivastava",
+    "Jonathan Wu"
+  ],
   "venue": "arXiv",
   "year": 2026,
   "citations": 0,
@@ -31,7 +42,11 @@
     "efficient vision-language adaptation"
   ],
   "topic_cluster": 2,
-  "related_papers": [13, 14],
+  "related_papers": [
+    13,
+    14
+  ],
   "bibtex_key": "wu2026decoupling",
-  "canonical_url": "https://ericolony.github.io/Publications/decoupling-vision-and-language-codebook-anchored-visual-adaptation/"
+  "canonical_url": "https://ericolony.github.io/Publications/decoupling-vision-and-language-codebook-anchored-visual-adaptation/",
+  "openalex_id": "W7131320017"
 }

@@ -50,5 +50,6 @@
   ],
   "bibtex_key": "shen2025authguard",
   "canonical_url": "https://ericolony.github.io/Publications/authguard-generalizable-deepfake-detection-via-language-guidance/",
-  "dblp": "journals/corr/abs-2506-04501"
+  "dblp": "journals/corr/abs-2506-04501",
+  "openalex_id": "W4416132261"
 }

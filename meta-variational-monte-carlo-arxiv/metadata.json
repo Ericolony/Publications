@@ -1,7 +1,13 @@
 {
   "id": 11,
   "title": "Meta Variational Monte Carlo",
-  "authors": ["Tianchen Zhao", "James Stokes", "Oliver Knitter", "Brian Chen", "Shravan Veerapaneni"],
+  "authors": [
+    "Tianchen Zhao",
+    "James Stokes",
+    "Oliver Knitter",
+    "Brian Chen",
+    "Shravan Veerapaneni"
+  ],
   "venue": "arXiv",
   "year": 2020,
   "citations": 4,
@@ -12,7 +18,8 @@
   "links": {
     "arxiv": "https://arxiv.org/abs/2011.10614",
     "pdf": "https://arxiv.org/pdf/2011.10614",
-    "code": null
+    "code": null,
+    "doi": "https://doi.org/10.48550/arxiv.2011.10614"
   },
   "abstract": "An identification is found between meta-learning and the problem of determining the ground state of a randomly generated Hamiltonian drawn from a known ensemble. A model-agnostic meta-learning approach is proposed to solve the associated learning problem and a preliminary experimental study of random Max-Cut problems indicates that the resulting Meta Variational Monte Carlo accelerates training and improves convergence.",
   "one_sentence_summary": "Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances.",
@@ -32,7 +39,14 @@
   ],
   "topic_cluster": 3,
   "topic_cluster_name": "Neural Quantum States and Scientific Machine Learning",
-  "related_papers": [4, 5, 6, 16, 17],
+  "related_papers": [
+    4,
+    5,
+    6,
+    16,
+    17
+  ],
   "bibtex_key": "zhao2020meta_vmc",
-  "canonical_url": "https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/"
+  "canonical_url": "https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/",
+  "openalex_id": "W3108825439"
 }

@@ -1,7 +1,12 @@
 {
   "id": 10,
   "title": "Natural Evolution Strategies and Quantum Approximate Optimization",
-  "authors": ["Tianchen Zhao", "Giuseppe Carleo", "James Stokes", "Shravan Veerapaneni"],
+  "authors": [
+    "Tianchen Zhao",
+    "Giuseppe Carleo",
+    "James Stokes",
+    "Shravan Veerapaneni"
+  ],
   "venue": "arXiv",
   "year": 2020,
   "citations": 8,
@@ -31,7 +36,13 @@
   ],
   "topic_cluster": 3,
   "topic_cluster_name": "Neural Quantum States and Scientific Machine Learning",
-  "related_papers": [5, 6, 11, 17],
+  "related_papers": [
+    5,
+    6,
+    11,
+    17
+  ],
   "bibtex_key": "zhao2020nes_qaoa",
-  "canonical_url": "https://ericolony.github.io/Publications/natural-evolution-strategies-and-quantum-approximate-optimization/"
+  "canonical_url": "https://ericolony.github.io/Publications/natural-evolution-strategies-and-quantum-approximate-optimization/",
+  "openalex_id": "W3023377879"
 }

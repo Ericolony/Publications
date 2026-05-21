@@ -18,7 +18,8 @@
     "arxiv": "https://arxiv.org/abs/2207.10838",
     "pdf": "https://arxiv.org/pdf/2207.10838",
     "code": "TODO",
-    "project": null
+    "project": null,
+    "doi": "https://doi.org/10.1080/14697688.2023.2259954"
   },
   "abstract": "Variational quantum Monte Carlo (VMC) combined with neural-network quantum states offers a novel angle of attack on the curse-of-dimensionality encountered in a particular class of partial differential equations (PDEs); namely, the real- and imaginary time-dependent Schr\u00f6dinger equation. In this paper, we present a simple generalization of VMC applicable to arbitrary time-dependent PDEs, showcasing the technique in the multi-asset Black-Scholes PDE for pricing European options contingent on many correlated underlying assets.",
   "one_sentence_summary": "Generalizes variational quantum Monte Carlo with neural-network quantum states to solve arbitrary time-dependent PDEs, demonstrated on multi-asset Black-Scholes option pricing.",
@@ -37,7 +38,13 @@
   ],
   "topic_cluster": 4,
   "topic_cluster_name": "Quantum-Inspired Scientific Computing and Finance",
-  "related_papers": [4, 5, 6, 17],
+  "related_papers": [
+    4,
+    5,
+    6,
+    17
+  ],
   "bibtex_key": "zhao2024quantum",
-  "canonical_url": "https://ericolony.github.io/Publications/quantum-inspired-variational-algorithms-for-partial-differential-equations/"
+  "canonical_url": "https://ericolony.github.io/Publications/quantum-inspired-variational-algorithms-for-partial-differential-equations/",
+  "openalex_id": "W4387169617"
 }

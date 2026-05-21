@@ -1,6 +1,11 @@
 {
   "title": "Adversarial Defense via Learning to Generate Diverse Attacks",
-  "authors": ["Yunseok Jang", "Tianchen Zhao", "Seunghoon Hong", "Honglak Lee"],
+  "authors": [
+    "Yunseok Jang",
+    "Tianchen Zhao",
+    "Seunghoon Hong",
+    "Honglak Lee"
+  ],
   "year": 2019,
   "venue": "ICCV",
   "abstract": "The paper proposes using a recursive and stochastic generator that produces strong and diverse adversarial perturbations that comprehensively reveal the vulnerability of the target classifier, improving robustness against various attack types on MNIST and CIFAR-10.",
@@ -27,5 +32,6 @@
   "topic_cluster": {
     "id": 2,
     "name": "Generative Modeling, Robustness, and Vision-Language Adaptation"
-  }
+  },
+  "openalex_id": "W2986674980"
 }
