@@ -1,7 +1,16 @@
 {
   "id": 13,
   "title": "Salient Concept-Aware Generative Data Augmentation",
-  "authors": ["Tianchen Zhao", "Xuanbai Chen", "Zhihua Li", "Jun Fang", "Dongsheng An", "Xiang Xu", "Zhuowen Tu", "Yifan Xing"],
+  "authors": [
+    "Tianchen Zhao",
+    "Xuanbai Chen",
+    "Zhihua Li",
+    "Jun Fang",
+    "Dongsheng An",
+    "Xiang Xu",
+    "Zhuowen Tu",
+    "Yifan Xing"
+  ],
   "venue": "arXiv",
   "year": 2025,
   "citations": 1,
@@ -12,7 +21,8 @@
   "links": {
     "arxiv": "https://arxiv.org/abs/2510.15194",
     "pdf": "https://arxiv.org/pdf/2510.15194",
-    "code": null
+    "code": null,
+    "doi": "https://doi.org/10.48550/arXiv.2510.15194"
   },
   "abstract": "Recent generative data augmentation methods conditioned on both image and text prompts struggle to balance between fidelity and diversity, as it is challenging to preserve essential image details while aligning with varied text prompts. This challenge arises because representations in the synthesis process often become entangled with non-essential input image attributes such as environmental contexts, creating conflicts with text prompts intended to modify these elements. To address this, we propose a personalized image generation framework that uses a salient concept-aware image embedding model to reduce the influence of irrelevant visual details during the synthesis process, thereby maintaining intuitive alignment between image and text inputs. By generating images that better preserve class-discriminative features with additional controlled variations, our framework effectively enhances the diversity of training datasets and thereby improves the robustness of downstream models. Our approach demonstrates superior performance across eight fine-grained vision datasets, outperforming state-of-the-art augmentation methods with averaged classification accuracy improvements by 0.73% and 6.5% under conventional and long-tail settings, respectively.",
   "one_sentence_summary": "Proposes a salient concept-aware generative augmentation framework that disentangles class-discriminative features from irrelevant context, improving fine-grained recognition under both conventional and long-tail settings.",
@@ -31,7 +41,13 @@
   ],
   "topic_cluster": 2,
   "topic_cluster_name": "Generative Modeling, Robustness, and Vision-Language Adaptation",
-  "related_papers": [2, 3, 14, 15],
+  "related_papers": [
+    2,
+    3,
+    14,
+    15
+  ],
   "bibtex_key": "zhao2025salient",
-  "canonical_url": "https://ericolony.github.io/Publications/salient-concept-aware-generative-data-augmentation/"
+  "canonical_url": "https://ericolony.github.io/Publications/salient-concept-aware-generative-data-augmentation/",
+  "dblp": "journals/corr/abs-2510-15194"
 }

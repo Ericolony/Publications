@@ -1,6 +1,10 @@
 {
   "title": "Scalable Neural Quantum States Architecture for Quantum Chemistry",
-  "authors": ["Tianchen Zhao", "James Stokes", "Shravan Veerapaneni"],
+  "authors": [
+    "Tianchen Zhao",
+    "James Stokes",
+    "Shravan Veerapaneni"
+  ],
   "year": 2023,
   "venue": "Machine Learning: Science and Technology",
   "abstract": "Variational optimization of neural-network representations of quantum states has been successfully applied to solve interacting fermionic problems. Despite rapid developments, significant scalability challenges arise when considering molecules of large scale, which correspond to non-locally interacting quantum spin Hamiltonians consisting of sums of thousands or even millions of Pauli operators. In this work, we introduce scalable parallelization strategies to improve neural-network-based variational quantum Monte Carlo calculations for ab-initio quantum chemistry applications. We establish GPU-supported local energy parallelism to compute the optimization objective for Hamiltonians of potentially complex molecules. Using autoregressive sampling techniques, we demonstrate systematic improvement in wall-clock timings required to achieve CCSD baseline target energies. The performance is further enhanced by accommodating the structure of resultant spin Hamiltonians into the autoregressive sampling ordering. The algorithm achieves promising performance in comparison with the classical approximate methods and exhibits both running time and scalability advantages over existing neural-network based methods.",
@@ -17,7 +21,8 @@
   "links": {
     "arxiv": "https://arxiv.org/abs/2208.05637",
     "pdf": "https://arxiv.org/pdf/2208.05637",
-    "code": "TODO"
+    "code": "TODO",
+    "doi": "https://doi.org/10.1088/2632-2153/acdb2f"
   },
   "related_papers": [
     "natural-evolution-strategies-and-variational-monte-carlo",
@@ -29,5 +34,7 @@
   "topic_cluster": {
     "id": 3,
     "name": "Neural Quantum States and Scientific Machine Learning"
-  }
+  },
+  "semantic_scholar_id": "251493202",
+  "dblp": "journals/mlst/ZhaoSV23"
 }
