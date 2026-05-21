@@ -32,25 +32,70 @@
   <link rel="canonical" href="https://ericolony.github.io/Publications/scalable-neural-quantum-states-architecture-for-quantum-chemistry/">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": "Scalable Neural Quantum States Architecture for Quantum Chemistry",
-    "headline": "Scalable Neural Quantum States Architecture for Quantum Chemistry",
-    "author": [
-      {"@type": "Person", "name": "Tianchen Zhao"},
-      {"@type": "Person", "name": "James Stokes"},
-      {"@type": "Person", "name": "Shravan Veerapaneni"}
-    ],
-    "abstract": "Variational optimization of neural-network representations of quantum states has been successfully applied to solve interacting fermionic problems. Despite rapid developments, significant scalability challenges arise when considering molecules of large scale, which correspond to non-locally interacting quantum spin Hamiltonians consisting of sums of thousands or even millions of Pauli operators. In this work, we introduce scalable parallelization strategies to improve neural-network-based variational quantum Monte Carlo calculations for ab-initio quantum chemistry applications. We establish GPU-supported local energy parallelism to compute the optimization objective for Hamiltonians of potentially complex molecules. Using autoregressive sampling techniques, we demonstrate systematic improvement in wall-clock timings required to achieve CCSD baseline target energies. The performance is further enhanced by accommodating the structure of resultant spin Hamiltonians into the autoregressive sampling ordering. The algorithm achieves promising performance in comparison with the classical approximate methods and exhibits both running time and scalability advantages over existing neural-network based methods.",
-    "datePublished": "2023",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Machine Learning: Science and Technology"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Scalable Neural Quantum States Architecture for Quantum Chemistry",
+      "headline": "Scalable Neural Quantum States Architecture for Quantum Chemistry",
+      "author": [
+        {
+          "@id": "#tianchen-zhao"
+        },
+        {
+          "@type": "Person",
+          "name": "James Stokes"
+        },
+        {
+          "@type": "Person",
+          "name": "Shravan Veerapaneni"
+        }
+      ],
+      "abstract": "Variational optimization of neural-network representations of quantum states has been successfully applied to solve interacting fermionic problems. Despite rapid developments, significant scalability challenges arise when considering molecules of large scale, which correspond to non-locally interacting quantum spin Hamiltonians consisting of sums of thousands or even millions of Pauli operators. In this work, we introduce scalable parallelization strategies to improve neural-network-based variational quantum Monte Carlo calculations for ab-initio quantum chemistry applications. We establish GPU-supported local energy parallelism to compute the optimization objective for Hamiltonians of potentially complex molecules. Using autoregressive sampling techniques, we demonstrate systematic improvement in wall-clock timings required to achieve CCSD baseline target energies. The performance is further enhanced by accommodating the structure of resultant spin Hamiltonians into the autoregressive sampling ordering. The algorithm achieves promising performance in comparison with the classical approximate methods and exhibits both running time and scalability advantages over existing neural-network based methods.",
+      "datePublished": "2023",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Machine Learning: Science and Technology"
+      },
+      "url": "https://ericolony.github.io/Publications/scalable-neural-quantum-states-architecture-for-quantum-chemistry/",
+      "sameAs": "https://doi.org/10.1088/2632-2153/acdb2f",
+      "keywords": [
+        "scalable neural quantum states",
+        "neural quantum states quantum chemistry",
+        "variational Monte Carlo quantum chemistry",
+        "autoregressive neural quantum states",
+        "GPU-scaled quantum chemistry",
+        "ab initio neural quantum states"
+      ],
+      "@id": "https://ericolony.github.io/Publications/scalable-neural-quantum-states-architecture-for-quantum-chemistry/",
+      "codeRepository": "https://github.com/Ericolony/made-qchem"
     },
-    "url": "https://ericolony.github.io/Publications/scalable-neural-quantum-states-architecture-for-quantum-chemistry/",
-    "sameAs": "https://doi.org/10.1088/2632-2153/acdb2f",
-    "keywords": ["scalable neural quantum states", "neural quantum states quantum chemistry", "variational Monte Carlo quantum chemistry", "autoregressive neural quantum states", "GPU-scaled quantum chemistry", "ab initio neural quantum states"]
-  }
+    {
+      "@type": "Person",
+      "name": "Tianchen Zhao",
+      "givenName": "Tianchen",
+      "familyName": "Zhao",
+      "alternateName": "Eric Zhao",
+      "url": "https://ericolony.github.io/Publications/",
+      "sameAs": [
+        "https://orcid.org/0000-0003-2911-7205",
+        "https://scholar.google.com/citations?user=-uCJznsAAAAJ",
+        "https://www.semanticscholar.org/author/2305116981",
+        "https://dblp.org/pid/217/2471",
+        "https://github.com/Ericolony"
+      ],
+      "@id": "#tianchen-zhao"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "made-qchem",
+      "codeRepository": "https://github.com/Ericolony/made-qchem",
+      "programmingLanguage": "Python",
+      "@id": "https://github.com/Ericolony/made-qchem"
+    }
+  ]
+}
   </script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }

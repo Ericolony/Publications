@@ -40,22 +40,66 @@
   <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": "Natural Evolution Strategies and Quantum Approximate Optimization",
-    "headline": "Natural Evolution Strategies and Quantum Approximate Optimization",
-    "author": [
-      {"@type": "Person", "name": "Tianchen Zhao"},
-      {"@type": "Person", "name": "Giuseppe Carleo"},
-      {"@type": "Person", "name": "James Stokes"},
-      {"@type": "Person", "name": "Shravan Veerapaneni"}
-    ],
-    "datePublished": "2020",
-    "publisher": {"@type": "Organization", "name": "arXiv"},
-    "url": "https://ericolony.github.io/Publications/natural-evolution-strategies-and-quantum-approximate-optimization/",
-    "sameAs": "https://arxiv.org/abs/2005.04447",
-    "description": "Applies natural evolution strategies to quantum approximate optimization, achieving competitive Max-Cut approximation ratios via neural quantum states."
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Natural Evolution Strategies and Quantum Approximate Optimization",
+      "headline": "Natural Evolution Strategies and Quantum Approximate Optimization",
+      "author": [
+        {
+          "@id": "#tianchen-zhao"
+        },
+        {
+          "@type": "Person",
+          "name": "Giuseppe Carleo"
+        },
+        {
+          "@type": "Person",
+          "name": "James Stokes"
+        },
+        {
+          "@type": "Person",
+          "name": "Shravan Veerapaneni"
+        }
+      ],
+      "datePublished": "2020",
+      "publisher": {
+        "@type": "Organization",
+        "name": "arXiv"
+      },
+      "url": "https://ericolony.github.io/Publications/natural-evolution-strategies-and-quantum-approximate-optimization/",
+      "sameAs": "https://arxiv.org/abs/2005.04447",
+      "description": "Applies natural evolution strategies to quantum approximate optimization, achieving competitive Max-Cut approximation ratios via neural quantum states.",
+      "@id": "https://ericolony.github.io/Publications/natural-evolution-strategies-and-quantum-approximate-optimization/",
+      "codeRepository": "https://github.com/Ericolony/QAOA"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianchen Zhao",
+      "givenName": "Tianchen",
+      "familyName": "Zhao",
+      "alternateName": "Eric Zhao",
+      "url": "https://ericolony.github.io/Publications/",
+      "sameAs": [
+        "https://orcid.org/0000-0003-2911-7205",
+        "https://scholar.google.com/citations?user=-uCJznsAAAAJ",
+        "https://www.semanticscholar.org/author/2305116981",
+        "https://dblp.org/pid/217/2471",
+        "https://github.com/Ericolony"
+      ],
+      "@id": "#tianchen-zhao"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "QAOA",
+      "codeRepository": "https://github.com/Ericolony/QAOA",
+      "programmingLanguage": "Python",
+      "@id": "https://github.com/Ericolony/QAOA"
+    }
+  ]
+}
   </script>
 
   <style>

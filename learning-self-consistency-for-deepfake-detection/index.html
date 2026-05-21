@@ -37,24 +37,73 @@
   <link rel="canonical" href="https://ericolony.github.io/Publications/learning-self-consistency-for-deepfake-detection/">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": "Learning Self-Consistency for Deepfake Detection",
-    "headline": "Learning Self-Consistency for Deepfake Detection",
-    "author": [
-      {"@type": "Person", "name": "Tianchen Zhao"},
-      {"@type": "Person", "name": "Xiang Xu"},
-      {"@type": "Person", "name": "Mingze Xu"},
-      {"@type": "Person", "name": "Hui Ding"},
-      {"@type": "Person", "name": "Yuanjun Xiong"},
-      {"@type": "Person", "name": "Wei Xia"}
-    ],
-    "datePublished": "2021",
-    "publisher": {"@type": "Organization", "name": "ICCV"},
-    "url": "https://ericolony.github.io/Publications/learning-self-consistency-for-deepfake-detection/",
-    "abstract": "We propose a new method to detect deepfake images using the cue of the source feature inconsistency within the forged images. It is based on the hypothesis that images' distinct source features can be preserved and extracted after going through state-of-the-art deepfake generation processes. We introduce a novel representation learning approach, called pair-wise self-consistency learning (PCL), for training ConvNets to extract these source features and detect deepfake images. It is accompanied by a new image synthesis approach, called inconsistency image generator (I2G), to provide richly annotated training data for PCL. Experimental results on seven popular datasets show that our models improve averaged AUC over the state of the art from 96.45% to 98.05% in the in-dataset evaluation and from 86.03% to 92.18% in the cross-dataset evaluation.",
-    "keywords": ["deepfake detection self-consistency", "generalizable deepfake detection", "source feature inconsistency", "patch-wise consistency learning", "cross-dataset face forgery detection", "robust deepfake detection"]
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Learning Self-Consistency for Deepfake Detection",
+      "headline": "Learning Self-Consistency for Deepfake Detection",
+      "author": [
+        {
+          "@id": "#tianchen-zhao"
+        },
+        {
+          "@type": "Person",
+          "name": "Xiang Xu"
+        },
+        {
+          "@type": "Person",
+          "name": "Mingze Xu"
+        },
+        {
+          "@type": "Person",
+          "name": "Hui Ding"
+        },
+        {
+          "@type": "Person",
+          "name": "Yuanjun Xiong"
+        },
+        {
+          "@type": "Person",
+          "name": "Wei Xia"
+        }
+      ],
+      "datePublished": "2021",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ICCV"
+      },
+      "url": "https://ericolony.github.io/Publications/learning-self-consistency-for-deepfake-detection/",
+      "abstract": "We propose a new method to detect deepfake images using the cue of the source feature inconsistency within the forged images. It is based on the hypothesis that images' distinct source features can be preserved and extracted after going through state-of-the-art deepfake generation processes. We introduce a novel representation learning approach, called pair-wise self-consistency learning (PCL), for training ConvNets to extract these source features and detect deepfake images. It is accompanied by a new image synthesis approach, called inconsistency image generator (I2G), to provide richly annotated training data for PCL. Experimental results on seven popular datasets show that our models improve averaged AUC over the state of the art from 96.45% to 98.05% in the in-dataset evaluation and from 86.03% to 92.18% in the cross-dataset evaluation.",
+      "keywords": [
+        "deepfake detection self-consistency",
+        "generalizable deepfake detection",
+        "source feature inconsistency",
+        "patch-wise consistency learning",
+        "cross-dataset face forgery detection",
+        "robust deepfake detection"
+      ],
+      "@id": "https://ericolony.github.io/Publications/learning-self-consistency-for-deepfake-detection/"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianchen Zhao",
+      "givenName": "Tianchen",
+      "familyName": "Zhao",
+      "alternateName": "Eric Zhao",
+      "url": "https://ericolony.github.io/Publications/",
+      "sameAs": [
+        "https://orcid.org/0000-0003-2911-7205",
+        "https://scholar.google.com/citations?user=-uCJznsAAAAJ",
+        "https://www.semanticscholar.org/author/2305116981",
+        "https://dblp.org/pid/217/2471",
+        "https://github.com/Ericolony"
+      ],
+      "@id": "#tianchen-zhao"
+    }
+  ]
+}
   </script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }

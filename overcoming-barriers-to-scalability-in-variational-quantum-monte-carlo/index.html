@@ -35,26 +35,68 @@
   <link rel="canonical" href="https://ericolony.github.io/Publications/overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": "Overcoming Barriers to Scalability in Variational Quantum Monte Carlo",
-    "headline": "Overcoming Barriers to Scalability in Variational Quantum Monte Carlo",
-    "author": [
-      {"@type": "Person", "name": "Tianchen Zhao"},
-      {"@type": "Person", "name": "Saibal De"},
-      {"@type": "Person", "name": "Brian Chen"},
-      {"@type": "Person", "name": "James Stokes"},
-      {"@type": "Person", "name": "Shravan Veerapaneni"}
-    ],
-    "abstract": "The variational quantum Monte Carlo (VQMC) method received significant attention in the recent past because of its ability to overcome the curse of dimensionality inherent in many-body quantum systems. Close parallels exist between VQMC and the emerging hybrid quantum-classical computational paradigm of variational quantum algorithms. VQMC overcomes the curse of dimensionality by performing alternating steps of Monte Carlo sampling from a parametrized quantum state followed by gradient-based optimization. While VQMC has been applied to solve high-dimensional problems, it is known to be difficult to parallelize, primarily owing to the Markov Chain Monte Carlo (MCMC) sampling step. In this work, we explore the scalability of VQMC when autoregressive models, with exact sampling, are used in place of MCMC. This approach can exploit distributed-memory, shared-memory and/or GPU parallelism in the sampling task without any bottlenecks. In particular, we demonstrate the GPU-scalability of VQMC for solving up to ten-thousand dimensional combinatorial optimization problems.",
-    "datePublished": "2021",
-    "publisher": {
-      "@type": "Organization",
-      "name": "SC (International Conference for High Performance Computing, Networking, Storage and Analysis)"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Overcoming Barriers to Scalability in Variational Quantum Monte Carlo",
+      "headline": "Overcoming Barriers to Scalability in Variational Quantum Monte Carlo",
+      "author": [
+        {
+          "@id": "#tianchen-zhao"
+        },
+        {
+          "@type": "Person",
+          "name": "Saibal De"
+        },
+        {
+          "@type": "Person",
+          "name": "Brian Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "James Stokes"
+        },
+        {
+          "@type": "Person",
+          "name": "Shravan Veerapaneni"
+        }
+      ],
+      "abstract": "The variational quantum Monte Carlo (VQMC) method received significant attention in the recent past because of its ability to overcome the curse of dimensionality inherent in many-body quantum systems. Close parallels exist between VQMC and the emerging hybrid quantum-classical computational paradigm of variational quantum algorithms. VQMC overcomes the curse of dimensionality by performing alternating steps of Monte Carlo sampling from a parametrized quantum state followed by gradient-based optimization. While VQMC has been applied to solve high-dimensional problems, it is known to be difficult to parallelize, primarily owing to the Markov Chain Monte Carlo (MCMC) sampling step. In this work, we explore the scalability of VQMC when autoregressive models, with exact sampling, are used in place of MCMC. This approach can exploit distributed-memory, shared-memory and/or GPU parallelism in the sampling task without any bottlenecks. In particular, we demonstrate the GPU-scalability of VQMC for solving up to ten-thousand dimensional combinatorial optimization problems.",
+      "datePublished": "2021",
+      "publisher": {
+        "@type": "Organization",
+        "name": "SC (International Conference for High Performance Computing, Networking, Storage and Analysis)"
+      },
+      "url": "https://ericolony.github.io/Publications/overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/",
+      "keywords": [
+        "scalable variational quantum Monte Carlo",
+        "HPC variational quantum Monte Carlo",
+        "distributed neural quantum states",
+        "scalability barriers VMC",
+        "high performance quantum Monte Carlo"
+      ],
+      "@id": "https://ericolony.github.io/Publications/overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/"
     },
-    "url": "https://ericolony.github.io/Publications/overcoming-barriers-to-scalability-in-variational-quantum-monte-carlo/",
-    "keywords": ["scalable variational quantum Monte Carlo", "HPC variational quantum Monte Carlo", "distributed neural quantum states", "scalability barriers VMC", "high performance quantum Monte Carlo"]
-  }
+    {
+      "@type": "Person",
+      "name": "Tianchen Zhao",
+      "givenName": "Tianchen",
+      "familyName": "Zhao",
+      "alternateName": "Eric Zhao",
+      "url": "https://ericolony.github.io/Publications/",
+      "sameAs": [
+        "https://orcid.org/0000-0003-2911-7205",
+        "https://scholar.google.com/citations?user=-uCJznsAAAAJ",
+        "https://www.semanticscholar.org/author/2305116981",
+        "https://dblp.org/pid/217/2471",
+        "https://github.com/Ericolony"
+      ],
+      "@id": "#tianchen-zhao"
+    }
+  ]
+}
   </script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }

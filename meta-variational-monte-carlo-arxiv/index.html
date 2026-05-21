@@ -42,23 +42,62 @@
   <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": "Meta Variational Monte Carlo",
-    "headline": "Meta Variational Monte Carlo",
-    "author": [
-      {"@type": "Person", "name": "Tianchen Zhao"},
-      {"@type": "Person", "name": "James Stokes"},
-      {"@type": "Person", "name": "Oliver Knitter"},
-      {"@type": "Person", "name": "Brian Chen"},
-      {"@type": "Person", "name": "Shravan Veerapaneni"}
-    ],
-    "datePublished": "2020",
-    "publisher": {"@type": "Organization", "name": "arXiv"},
-    "url": "https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/",
-    "sameAs": "https://arxiv.org/abs/2011.10614",
-    "description": "Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances."
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Meta Variational Monte Carlo",
+      "headline": "Meta Variational Monte Carlo",
+      "author": [
+        {
+          "@id": "#tianchen-zhao"
+        },
+        {
+          "@type": "Person",
+          "name": "James Stokes"
+        },
+        {
+          "@type": "Person",
+          "name": "Oliver Knitter"
+        },
+        {
+          "@type": "Person",
+          "name": "Brian Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Shravan Veerapaneni"
+        }
+      ],
+      "datePublished": "2020",
+      "publisher": {
+        "@type": "Organization",
+        "name": "arXiv"
+      },
+      "url": "https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/",
+      "sameAs": "https://arxiv.org/abs/2011.10614",
+      "description": "Connects meta-learning to quantum ground-state problems, proposing Meta Variational Monte Carlo that accelerates training and improves convergence on random Max-Cut instances.",
+      "@id": "https://ericolony.github.io/Publications/meta-variational-monte-carlo-arxiv/"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianchen Zhao",
+      "givenName": "Tianchen",
+      "familyName": "Zhao",
+      "alternateName": "Eric Zhao",
+      "url": "https://ericolony.github.io/Publications/",
+      "sameAs": [
+        "https://orcid.org/0000-0003-2911-7205",
+        "https://scholar.google.com/citations?user=-uCJznsAAAAJ",
+        "https://www.semanticscholar.org/author/2305116981",
+        "https://dblp.org/pid/217/2471",
+        "https://github.com/Ericolony"
+      ],
+      "@id": "#tianchen-zhao"
+    }
+  ]
+}
   </script>
 
   <style>
